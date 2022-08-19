@@ -8,12 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Aug 2022 11:29:53 -0600</lastBuildDate><atom:link href="https://bstar.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>V17a</title>
-      <link>https://bstar.app/patch-notes/v17a/</link>
+      <title>17a Patch Notes - Beginning of Season 2</title>
+      <link>https://bstar.app/patch-notes/17a/</link>
       <pubDate>Fri, 19 Aug 2022 11:29:53 -0600</pubDate>
       
-      <guid>https://bstar.app/patch-notes/v17a/</guid>
-      <description></description>
+      <guid>https://bstar.app/patch-notes/17a/</guid>
+      <description>Welcome to version 17a, the very first balance patch since Barnard&amp;rsquo;s Star was launched!
+(Geez, about time, you might be thinking!)
+Due to the way Barnard&amp;rsquo;s Star was designed and coded, the game logic has to stay deterministic in order to be correctly simulated on both client and server. This means that client and server need to be updated in lockstep with each other. But due to the iOS App Store and the Google Play Store requiring a review of each app version before they&amp;rsquo;re released, we don&amp;rsquo;t really have exact control over when updates are released.</description>
     </item>
     
   </channel>

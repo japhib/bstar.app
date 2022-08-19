@@ -2,4 +2,66 @@ body {
   background: #131c2e; }
 
 .nav-item .nav-link {
-  color: #98b5ff; }
+  color: #98b5ff;
+  cursor: pointer; }
+
+.draft-label {
+  color: #913dcd; }
+
+.post-title {
+  font-size: 3em;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+
+blockquote {
+  border-left: 3px solid #3e5073;
+  padding-left: 1em;
+  color: #98b5ff;
+  overflow: hidden; }
+
+code {
+  color: #ff89c6; }
+
+.table-of-contents {
+  float: left;
+  border: 1px solid white;
+  width: fit-content;
+  padding: 1em;
+  padding-bottom: 0;
+  margin: 1em;
+  background-color: #1a2954; }
+  .table-of-contents h3 {
+    margin-top: 0; }
+  .table-of-contents a {
+    color: #acb5f9;
+    text-decoration: none; }
+
+h2 {
+  clear: both; }
+  h2:not(:nth-of-type(1))::before {
+    display: inline-block;
+    content: "";
+    border-top: 2px solid #2d4580;
+    width: 100%;
+    margin: 3em 0 .2em 0;
+    transform: translateY(-1rem); }
+
+hr {
+  border-top: 2px solid #2d4580;
+  margin: 2em; }
+
+h3 {
+  margin-top: 1.5em; }
+
+video {
+  display: block;
+  margin: 0px auto; }
+
+img {
+  display: block;
+  margin: 0px auto;
+  max-width: 60%; }
+
+.twitter-tweet {
+  display: block;
+  margin: 0px auto; }

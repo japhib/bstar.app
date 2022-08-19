@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+
+    
+    
+    <link rel="stylesheet" href="https://bstar.app/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+
+    <title>Barnard's Star</title>
+</head><body>
+        <div class="container content text-light"><div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+            <span class="fs-4">Barnard&#39;s Star</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://discord.gg/h5C5wEx" class="nav-link">Discord</a></li>
+            <li class="nav-item"><a href="/patch-notes" class="nav-link">Patch Notes</a></li>
+        </ul>
+    </header>
+</div>
+<main>
+	<article>
+		<div class="wide-container padded tertiary-bg p-text-mid">
+
+			<div class="title">
+				<h1 class="text-center post-title">17a Patch Notes - Beginning of Season 2</h1>
+
+				
+
+				
+
+				
+				<p class="blog-meta">Aug 19, 2022</p>
+				
+			</div>
+			
+
+			<hr />
+
+			<div class="table-of-contents">
+				<h3>Contents</h3>
+				<div id="contents">
+					<nav id="TableOfContents">
+  <ul>
+    <li><a href="#new-season">New Season</a></li>
+    <li><a href="#new-units">New Units!</a>
+      <ul>
+        <li><a href="#human-punk">Human Punk</a></li>
+        <li><a href="#robot-catalyst">Robot Catalyst</a></li>
+        <li><a href="#critter-the-beast">Critter &ldquo;The Beast&rdquo;</a></li>
+      </ul>
+    </li>
+    <li><a href="#new-maps">New Maps!</a>
+      <ul>
+        <li><a href="#existing-maps">Existing Maps</a></li>
+      </ul>
+    </li>
+    <li><a href="#updates-to-gameplay-systems">Updates to Gameplay Systems</a>
+      <ul>
+        <li><a href="#status-effects">Status effects</a></li>
+        <li><a href="#stun-and-electrify">Stun and Electrify</a></li>
+        <li><a href="#hazards">Hazards</a></li>
+      </ul>
+    </li>
+    <li><a href="#humans">Humans</a>
+      <ul>
+        <li><a href="#amphibian">Amphibian</a></li>
+        <li><a href="#medic">Medic</a></li>
+        <li><a href="#ranger">Ranger</a></li>
+      </ul>
+    </li>
+    <li><a href="#robots">Robots</a>
+      <ul>
+        <li><a href="#exterminator">Exterminator</a></li>
+        <li><a href="#automechanic">Automechanic</a></li>
+        <li><a href="#defragmenter">Defragmenter</a></li>
+        <li><a href="#physics-engine">Physics Engine</a></li>
+      </ul>
+    </li>
+    <li><a href="#critters">Critters</a>
+      <ul>
+        <li><a href="#grump">Grump</a></li>
+        <li><a href="#acid-junkie">Acid Junkie</a></li>
+        <li><a href="#flock-doc---renamed-to-gargoyle">Flock Doc - renamed to Gargoyle</a></li>
+        <li><a href="#overlord">Overlord</a></li>
+      </ul>
+    </li>
+    <li><a href="#future-roadmap">Future Roadmap</a></li>
+    <li><a href="#feedback">Feedback</a></li>
+  </ul>
+</nav>
+				</div>
+			</div>
+
+			<p>Welcome to version <code>17a</code>, the very first balance patch since Barnard&rsquo;s Star was launched!</p>
+<p>(<em>Geez, about time</em>, you might be thinking!)</p>
+<p>Due to the way Barnard&rsquo;s Star was designed and coded, the game logic has to stay deterministic in order to be correctly simulated on both client and server. This means that client and server need to be updated in lockstep with each other. But due to the iOS App Store and the Google Play Store requiring a review of each app version before they&rsquo;re released, we don&rsquo;t really have exact control over when updates are released. It&rsquo;s always &ldquo;within a few days&rdquo; from when we submit the build. This causes disruption to any players with active games.</p>
+<p>For this reason, I&rsquo;ve avoided making any changes to game logic since launch. This means no balance changes. However, the time has come to make breaking changes, and boy, there&rsquo;s a lot of &rsquo;em! I likely won&rsquo;t be making any more balance changes for the next 2-3 months.</p>
+<blockquote>
+<p>Note: due to the way replays work (less like watching a video and more like re-simulating the game when you know what actions each player will take), you can&rsquo;t watch a replay of a game from a previous version. That means that when this version, v17, is released, all existing replays will become unwatchable. We&rsquo;ll keep the games around, so they&rsquo;ll still reflect in your player profile stats. You just won&rsquo;t be able to watch the actual game replay in Barnard&rsquo;s TV. This is another big reason why I don&rsquo;t want to make balance changes very frequently. Eventually, I&rsquo;d like to have a better TV system, where you can watch replays from any patch &ndash; however, that&rsquo;ll be quite a bit of work, and just about every social and gameplay feature is higher priority than it. So it&rsquo;s not going to be implemented for a while.</p>
+</blockquote>
+<h2 id="new-season">New Season</h2>
+<p><code>17a</code> also marks the beginning of <code>Season 2</code>, which makes everything since launch until now <code>Season 1</code>. There might be multiple game versions that don&rsquo;t introduce different gameplay changes, because of the reasons outlined above. So we needed some other way to distinguish between what are effectively two different versions of Barnard&rsquo;s Star, and thus the concept of a &ldquo;Season&rdquo; was born. You can expect a new season every 3-6ish months going forward, at least for the next while, with new content and balance changes each time!</p>
+<p>In order to keep the leaderboards relevant and fresh, given the new season, everyone&rsquo;s skill rating (<a href="https://en.wikipedia.org/wiki/Elo_rating_system">Elo</a>) is being reset to the starting value of 1500. The top 10 players on the leaderboard will get a new badge celebrating their achievement.</p>
+<p>Congrats to our top 10 players! (as of August 19th, at least)</p>
+<ol>
+<li>aspirit (2031)</li>
+<li>Scaaat (2006)</li>
+<li>SancerEr (1980)</li>
+<li>Marzeltine (1968)</li>
+<li>philomoniker (1950)</li>
+<li>WispyMammoth (1918)</li>
+<li>louije (1814)</li>
+<li>Quinnteresting (1711)</li>
+<li>ZombieSwinger (1694)</li>
+<li>Robocopulus (1676)</li>
+</ol>
+<p>Additionally, players with over 100 games are getting a badge for that (and as more players get to that milestone, they&rsquo;ll be automatically granted that badge). Congrats to these players with over 100 games:</p>
+<ul>
+<li>Marzeltine (170)</li>
+<li>WispyMammoth (133)</li>
+<li>ZombieWinger (118)</li>
+<li>Billzabob (111)</li>
+</ul>
+<p>Note that the &ldquo;total games&rdquo; leaderboard is not going to be reset. That leaderboard, as well as each player&rsquo;s profiles, will continue to show the total number of games played across all seasons of Barnard&rsquo;s Star.</p>
+<blockquote>
+<p>The &ldquo;fastest response time&rdquo; leaderboard hasn&rsquo;t been exactly what I wanted it to be; the people at the top of the leaderboard tend to have very few games played, and in general were only active for a day or two and haven&rsquo;t played since then. It didn&rsquo;t feel right giving those people a badge, since it doesn&rsquo;t seem like they really earned it. This leaderboard will have to be tweaked in the future to reward <em>consistently</em> low response time across the entire season.</p>
+</blockquote>
+<h2 id="new-units">New Units!</h2>
+<p>Since we&rsquo;re adding a bunch of backwards-incompatible balance changes right now, this was a great time to add new units! There are 3 new units, one per faction.</p>
+<hr>
+<h3 id="human-punk">Human Punk</h3>
+<p><img src="/img/17a/punk.png" alt="Punk"></p>
+<blockquote>
+<p><em>A mechanically-minded tinkerer, well familiar with gadgets and machines of every kind. This intrepid explorer is not afraid of putting herself at risk in order to defeat the enemy.</em></p>
+</blockquote>
+<ul>
+<li>Health: 5</li>
+<li>Movement: 5</li>
+</ul>
+<p><code>Shotgun:</code></p>
+<ul>
+<li>Damage: 1</li>
+<li>Range: 3</li>
+<li>A short-range gun with a wide spread. Fires three projectiles in a triangular shape.</li>
+<li>Targets cover and enemies. Can&rsquo;t pass over cover. Orthogonal directions only.</li>
+</ul>
+<p><code>Displacement Charge:</code></p>
+<ul>
+<li>Cooldown: 1</li>
+<li>Range: 3</li>
+<li>Punk throws an charge to the target location which explodes on impact, pushing fighters in adjacent squares away from the impact.</li>
+<li>Targets clear spots. Diagonal directions only.</li>
+</ul>
+<p><code>Overload:</code></p>
+<ul>
+<li>Cooldown: 1</li>
+<li>Range: 2</li>
+<li>Punk triggers an electric explosion, electrifying themselves and anyone within 2 squares of them.</li>
+<li>Targets self only.</li>
+<li><em>(Electricity:  deals 1 damage, removes shields, and stuns enemy and friendly fighters for one turn. Spreads to nearby squares through water and acid. A unit cannot be stunned two turns in a row.)</em></li>
+</ul>
+<hr>
+<h3 id="robot-catalyst">Robot Catalyst</h3>
+<p><img src="/img/17a/catalyst.png" alt="Catalyst"></p>
+<blockquote>
+<p><em>A highly advanced AI of unknown origin. Able to manipulate space and time to accelerate its allies and cripple its enemies.</em></p>
+</blockquote>
+<ul>
+<li>Health: 5</li>
+<li>Movement: 4</li>
+</ul>
+<p><code>Psi Blast:</code></p>
+<ul>
+<li>Damage: 2</li>
+<li>Range: 4</li>
+<li>Psychic energy, concentrated into a small sphere and projected towards enemies at high speed.</li>
+<li>Targets enemies that aren&rsquo;t directly behind cover, and cover itself. Orthogonal directions only.</li>
+</ul>
+<p><code>Stasis:</code></p>
+<ul>
+<li>Cooldown: 1</li>
+<li>Range: 3</li>
+<li>Catalyst manipulates hyperspace to put the target unit in stasis, stunning it and giving it a shield.</li>
+<li>Targets adjacent enemies.</li>
+<li><em>(Stun:  a stunned unit cannot move or take any actions during their next turn. A unit cannot be stunned two turns in a row.)</em></li>
+</ul>
+<p><code>Inertial Spark:</code></p>
+<ul>
+<li>Cooldown: 1</li>
+<li>Range: 2</li>
+<li>The target friendly unit gets +2 movement points. These extra movement points do not come back upon getting a kill.</li>
+<li>Targets allies in both orthogonal and diagonal directions.</li>
+</ul>
+<hr>
+<h3 id="critter-the-beast">Critter &ldquo;The Beast&rdquo;</h3>
+<p><img src="/img/17a/beast.png" alt="The Beast"></p>
+<blockquote>
+<p><em>This wild creature swings its sizeable weight around the battlefield to break through any obstacle standing in its way. What it lacks in durability, it makes up in nasty surprises.</em></p>
+</blockquote>
+<ul>
+<li>Health: 6</li>
+<li>Movement: 5</li>
+<li>Immunities: Acid</li>
+</ul>
+<p><code>Stomp:</code></p>
+<ul>
+<li>Damage: 2</li>
+<li>Range: 2</li>
+<li>Jumps in the air and smashes down, dealing 2 damage to target square and all adjacent squares. Destroys directly targeted cover, and damages cover adjacent to target.</li>
+<li>Targets enemies and empty spaces.</li>
+</ul>
+<p><code>Body Slam:</code></p>
+<ul>
+<li>Cooldown: 1</li>
+<li>Range: 4</li>
+<li>The Beast charges forward to attack. Deals 2 damage to target enemy or cover and pushes it back one square.</li>
+</ul>
+<p><code>Acid Bag (passive):</code></p>
+<ul>
+<li>The Beast&rsquo;s body is basically a big bag of acid. Upon dying, it explodes, spreading acid to all adjacent squares.</li>
+<li><em>(Acid:  deals 2 damage to fighters who enter this square. Spreads to and consumes adjacent water and oil squares. Lasts one turn. Turns into a smokescreen when shot.)</em></li>
+</ul>
+<h2 id="new-maps">New Maps!</h2>
+<p>Three new map layouts have been added, one per area. See below:</p>
+<h3 id="existing-maps">Existing Maps</h3>
+<p>Some existing maps have been changed to prevent Psion from being able to hit the enemy nexus on its first turn.</p>
+<h2 id="updates-to-gameplay-systems">Updates to Gameplay Systems</h2>
+<h3 id="status-effects">Status effects</h3>
+<ul>
+<li>This system has been reworked overall. Previously, status effects were either hidden, or had a specific animation - for example, stunned characters had the &ldquo;zzz&rdquo; icons and electrified characters shook and had lightning pulses across their body.</li>
+<li>Now, they&rsquo;ll all be visible in a unified spot. A new UI element has been added where you can view status icons for a selected unit.</li>
+<li>Normally, just an icon is shown, but you can long press on the icon to get a larger popup with a description of each status effect.</li>
+</ul>
+<h3 id="stun-and-electrify">Stun and Electrify</h3>
+<ul>
+<li>Units cannot be stunned or electrified more than 1 turn in a row. When the stun/electrify wears off, they get a new status effect called Stun Immunity for one turn. This only prevents the stun - units will still take 1 damage when electrified, and be knocked back a square when hit by Knockout Punch, etc.</li>
+</ul>
+<h3 id="hazards">Hazards</h3>
+<p>A &ldquo;Hazard&rdquo; is anything that can be placed on the map, aside from fighters, cover, and teleporters: water, oil, fire, acid, smokescreen, land mines, and acid bubbles (which also count as cover).</p>
+<p>Previously, there were some hard-to-figure-out rules about which hazards could replace other hazards &ndash; for example, only water can replace fire, and smokescreen can&rsquo;t replace acid. Or something like that. This led to messages like this one:</p>
+<p><img src="/img/17a/discord-hazard-confusion.png" alt="Confusion in Discord about hazards"></p>
+<p>If I can&rsquo;t even remember them, I can&rsquo;t expect others to remember them. So, those rules have been removed!</p>
+<p>To sum up: <code>Any ability that places a hazard is now able to replace any other hazard.</code></p>
+<p>&hellip; And now, onto the actual balance changes!</p>
+<h2 id="humans">Humans</h2>
+<p><em>Amphibian and Medic get buffs, Ranger gets a small nerf.</em></p>
+<h3 id="amphibian">Amphibian</h3>
+<p>During the beta, Water/Electricity combos were terrifying - Amphibian sprayed water 3 tiles wide, electricity spread through fighters as well as water, and you only had to be <em>next</em> to the water (or someone else getting electrified) to be electrified yourself. There were a few matches where one team got completely stunlocked for several turns in a row, and there was simply nothing you could do about it.</p>
+<p>We&rsquo;ve since reined that in, and brought Electricity back to a much healthier place. It&rsquo;s more predictable and, importantly, harder to get your entire team stunlocked for several rounds. However, that has come at a price, which is that it&rsquo;s been pretty difficult to pull off water/electricity combos for multiple stuns. Now that the change is in place so that nobody will be stunned multiple turns in a row, it&rsquo;s high time for some Amphibian buffs!</p>
+<p><code>Spray Water</code></p>
+<ul>
+<li><code>Range 1 -&gt; 2</code>. Can now be used to spray water past a gap, when Amphibian is standing right next to the gap.</li>
+</ul>
+<p><code>Electrify</code></p>
+<ul>
+<li><code>Range 1 -&gt; 2</code>. Similar to the Spray Water changes, Electrify can also now be used across gaps.</li>
+<li>Notably, it can <em>also</em> reach across cover, and past other units.</li>
+</ul>
+<h3 id="medic">Medic</h3>
+<p>Our medical units have been underperforming &ndash; Human Medic in particular had staggeringly low pick rates and win rates. Her signature ability Med Kit is getting a buff, and I&rsquo;m switching out the generic stun of Sketchy Syringe for a new ability called Electric Punch. This new ability does essentially the same thing as the old one, but since it&rsquo;s electricity instead of a regular stun, it has synergy with other Human units that spread water on the map.</p>
+<p>Thanks @Scaaat in the Discord for the suggestion!</p>
+<p><code>Electric Punch</code></p>
+<ul>
+<li>Medic uses her unique, powered-up electric glove to punch the target enemy, shocking them and dealing 1 extra damage.
+Targets adjacent enemies and cover.</li>
+<li><em>(Electricity:  deals 1 damage, removes shields, and stuns enemy and friendly fighters for one turn. Spreads to nearby squares through water and acid. A unit cannot be stunned two turns in a row.)</em></li>
+</ul>
+<p><code>Sketchy Syringe</code></p>
+<ul>
+<li><code>Damage 2 -&gt; 3.</code> This will make it better for finishing off injured enemies (or taking a chunk out of healthy ones). I also don&rsquo;t foresee it being abused; it has a cooldown of 1, meaning it can&rsquo;t be used multiple times in a single turn on kill resets.</li>
+</ul>
+<p><code>Med Kit</code></p>
+<ul>
+<li><code>Range 1 -&gt; 2.</code></li>
+<li>Similar to Shield Bot, this ability can now be used in both orthogonal and diagonal directions, and can reach past cover, pits, and other units.</li>
+</ul>
+<h3 id="ranger">Ranger</h3>
+<p>Ranger is not picked terribly often, but he has a very high winrate. He has several strengths, due to his diverse ability kit and having a 3-damage primary attack. I&rsquo;m pulling back his range a bit to compensate for being good in just too many ways.</p>
+<p><code>Land Mine</code></p>
+<ul>
+<li><code>Range 4 -&gt; 3.</code> That throw-land-mine-and-shoot-it combo was never meant to be artillery anyway.</li>
+</ul>
+<p><code>Smoke Grenade</code></p>
+<ul>
+<li><code>Range 4 -&gt; 3.</code> With such a long range, he could be halfway across the map and still throw the smoke grenade to shield allies. Reducing the range on this ability forces a bit more tactical play around it.</li>
+<li>Smokescreen description clarified to explain that it blocks only primary attacks, not abilities.</li>
+</ul>
+<h2 id="robots">Robots</h2>
+<p><em>TL;DR</em></p>
+<ul>
+<li><em>Reflect Projectiles is fun again!</em></li>
+<li><em>Automechanic&rsquo;s healing ability gets a quality-of-life tweak</em></li>
+<li><em>Defragmenter gets a small buff</em></li>
+<li><em>Physics Engine gets a sizeable nerf</em></li>
+</ul>
+<h3 id="exterminator">Exterminator</h3>
+<p><code>Reflect Projectiles</code></p>
+<p>Back in the beta, Reflect Projectiles used to be a &ldquo;sticky&rdquo; buff on Exterminator that would last through turns, until it was consumed. So you could walk into a Ready Attack-er&rsquo;s line of sight to trick them into shooting at you, only to reflect the projectile right back at them. This felt bad for the player with the Ready Attack unit that damaged itself, but it felt great for the Exterminator. Back then, I made the call to change it into its current state, where it&rsquo;s an end-of-turn buff that only happens when Exterminator hasn&rsquo;t used his action in some other way, and it goes away when the next turn starts.</p>
+<p>Since that change, Exterminator&rsquo;s Reflect Projectiles ability has not really been used &hellip; at all. Maybe occasionally there&rsquo;s a noobie who isn&rsquo;t as familiar with the game and accidentally triggers it, but once players know about the &ldquo;undo&rdquo; button, there&rsquo;s not really any reason for you to trigger an enemy&rsquo;s Reflect Projectiles in your final, submitted turn.</p>
+<p>Not only is that sad for this ability, but it makes Exterminator pretty lackluster. I think it&rsquo;s been an interesting learning experience, but the cons outweight the pros in this situation. So I&rsquo;ve decided to bring back the Reflect Projectile buff&rsquo;s stickiness! That means that <strong>yes, it will be able to be used offensively again.</strong></p>
+<p>Here&rsquo;s the new description:</p>
+<p><code>Exterminator reflects the first projectile shot at it. When used, recharges after 1 turns.</code></p>
+<h3 id="automechanic">Automechanic</h3>
+<p><code>Oil Change</code></p>
+<ul>
+<li>(this is the ability that heals all teammates standing in oil)</li>
+<li><code>Added:</code> &ldquo;Removes the oil that healed teammates are standing in.&rdquo; This is a small buff, to make healed units not be left standing in a potentially damaging hazard.</li>
+</ul>
+<h3 id="defragmenter">Defragmenter</h3>
+<p><code>Sketchy Syringe</code></p>
+<ul>
+<li><code>Damage 2 -&gt; 3.</code> See the notes on the same change for the Human Medic, above.</li>
+</ul>
+<h3 id="physics-engine">Physics Engine</h3>
+<p>Physics Engine is currently extremely powerful - not only does it do 3 base damage and have the highest base movement speed in the game, it has the utility to manipulate allies, enemies, <em>and</em> cover. And due to this power being concentrated in its base movement and primary attack, it became an absolute beast on the battlefield when it could chain together a few kills.</p>
+<p>The issue as I see it isn&rsquo;t as much about power level, but the fact that Physics Engine is powerful in too many ways. Units should generally have high utility OR high damage, not both. For these changes, I&rsquo;m leaning into Physics Engine&rsquo;s identity as more of a support/utility unit, rather than a damaging one.</p>
+<ul>
+<li><code>Movement: 6 -&gt; 5</code></li>
+</ul>
+<p><code>Forklift</code></p>
+<ul>
+<li><code>Base damage: 3 -&gt; 2.</code> This attack can still deal 3 damage to a unit if they&rsquo;re knocked into a wall or another unit, it&rsquo;s just the damage when not knocking into anything that&rsquo;s unchanged. Before this change, Physics Engine dealt a staggering 4 damage with its melee attacks &ndash; more than any other attack or ability in the game!</li>
+</ul>
+<h2 id="critters">Critters</h2>
+<p><em>Buffs all around! &hellip; Except for Overlord. Overlord gets a nerf.</em></p>
+<h3 id="grump">Grump</h3>
+<p>Our boy Grumpy has also been underperforming. He&rsquo;s one of the starting characters and has a strong fantasy &ndash; the large, tough, regenerating mound of flesh &ndash; but in-game he&rsquo;s not delivering. He&rsquo;s just too easy to kill at the moment. To remedy this, his health is being increased:</p>
+<ul>
+<li><code>Health: 5 -&gt; 6</code></li>
+</ul>
+<p>It&rsquo;s a small change, but in playtesting I was able to confirm that this makes a significant difference in how easy he is to kill. Paired with his regeneration ability, it means he can frequently come back from 1 health and be an effective body-blocker against enemy advances.</p>
+<p><code>Stomp</code> (primary attack)</p>
+<ul>
+<li><code>Changed:</code> this attack can now target cover directly. Targeted cover is destroyed on impact. Splash damage to cover, and all damage to fighters, remains unchanged at 2.</li>
+</ul>
+<h3 id="acid-junkie">Acid Junkie</h3>
+<p>Acid Junkie is yet another character who is currently failing to deliver on his fantasy. He&rsquo;s supposed to be a &ldquo;chemist support,&rdquo; where the main &ldquo;chemist&rdquo; is the Critter Blobber. But due to how Acid worked previously, you could only deal damage with acid to a unit once per turn; after that, they were already standing in acid, so putting more acid down wouldn&rsquo;t deal any more damage. Now, that&rsquo;s been changed so laying down a hazard in a space that already has that hazard will effectively &ldquo;refresh&rdquo; it, dealing the same damage again. This means that <code>Acid Punch</code> can consistently deal 3 damage to all enemies, regardless of whether or not they&rsquo;re already standing in acid.</p>
+<p>Acid Junkie is also getting a brand new ability to further increase the amount of value he gets from collaborating with both Blobber and the new Critter character (because he can also create acid)!</p>
+<p><code>NEW ABILITY: Acid Surfing</code> (passive)</p>
+<ul>
+<li><code>Movement on acid only costs half a point.</code></li>
+</ul>
+<h3 id="flock-doc---renamed-to-gargoyle">Flock Doc - renamed to Gargoyle</h3>
+<p>Gargoyle (formerly Flock Doc) is yet another medical unit, and like the medic units on the other two factions, he is also underperforming. Also like them, he&rsquo;s getting buffs, including a sweet new ability!</p>
+<p>Thanks to @WispyLuako for suggesting this thematically-appropriate ability in Discord!</p>
+<ul>
+<li><code>Movement: 6 -&gt; 5.</code> Gargoyle&rsquo;s new ability is going to increase his mobility a LOT, so 6 movement is no longer necessary.</li>
+</ul>
+<p><code>Transfusion</code></p>
+<ul>
+<li><code>Removed:</code> deals 1 damage to self. Gargoyle is already a fairly fragile unit, because A) his attack is a melee attack, B) he doesn&rsquo;t have any way of healing himself, and C) there are no other healing units on the Critter faction. So dealing 1 damage to himself every time he used this ability made it a pretty big shot to the foot.</li>
+<li>It still heals all adjacent (in orthogonal + diagonal directions) allies to full health.</li>
+</ul>
+<p><code>NEW ABILITY: Vestigial Wings</code> (passive)</p>
+<ul>
+<li><code>Gargoyle uses its wings to fly for short amounts of time. Allows movement over cover, pits, and enemies, provided there is a clear spot on the other side.</code></li>
+<li>This ability greatly increases Gargoyle&rsquo;s mobility. It&rsquo;s similar to Hypertunnel (Psion&rsquo;s passive) but also provides movement over 1-wide gaps, as well as enemies.</li>
+<li><em>Why does Gargoyle get a better mobility passive than Psion?</em> Great question, with two answers: Gargoyle doesn&rsquo;t have move-after-attack, and his attack is melee (range 1). A melee attack means that he must be much closer to the enemy fighters or nexus in order to deal damage, which is inherently riskier. And no move-after-attack means that he doesn&rsquo;t have an escape, so he has to be committed to an attack unless he gets a kill.</li>
+<li>As a result of this, Gargoyle&rsquo;s play patterns end up being very different from Psion&rsquo;s. Where Psion is an annoying unit that pokes at your nexus and then scoots back behind cover, Gargoyle flies across gaps to make daring kills and heroic rescues, finishing off enemies and healing low teammates.</li>
+</ul>
+<h3 id="overlord">Overlord</h3>
+<p>Overlord is one of the units that has been unequivocally <em>over</em>-performing. The ability to summon another fighter is already pretty powerful, and combined with Acid Bubble&rsquo;s tendency to lock of large parts of the map for much of the game, Overlord became A) pretty overbearing to play against, and B) a must-pick for Critter teams. These changes aim to bring Overlord back in line with the rest of the team, and encourage more strategic play around where to place acid bubbles.</p>
+<p><code>Acid Bubble</code></p>
+<ul>
+<li><code>Changed:</code> when the Acid Bubble is damaged, instead of spreading acid to all adjacent squares, it now only places acid on the square it was directly on top of.</li>
+</ul>
+<h2 id="future-roadmap">Future Roadmap</h2>
+<p>Before wrapping up these already-crazy-long patch notes, I wanted to give some information about future development direction. Here are some developments you can expect in the near future:</p>
+<ul>
+<li>Add friends &amp; invite them to games</li>
+<li>More ways to view people&rsquo;s profiles</li>
+<li>More ways to filter viewable games on Barnard&rsquo;s TV</li>
+<li>Link your account to Discord</li>
+<li>Custom game options, such as different number of fighters and forced random team choices</li>
+<li>Lots more quality of life changes and bugfixes</li>
+</ul>
+<p>In the longer-term, here are the other major things I have planned:</p>
+<ul>
+<li>More units! (I have solid plans for at least 2 more per faction, and likely won&rsquo;t stop there)</li>
+<li>Map editor</li>
+<li>Smarter AI, including an Expert difficulty level</li>
+<li>Team colors other than red + blue</li>
+<li>Ability to view replays from a past version of the game</li>
+</ul>
+<p>In the <em>much</em> longer term, here are some big things I hope to implement <em>eventually</em>:</p>
+<ul>
+<li>Games with more than 2 players</li>
+<li>Single-player campaign</li>
+</ul>
+<p>Note that these last 2 are pretty huge tasks, and given this is a part-time thing for me, I won&rsquo;t make any promises about them actually ever happening. It&rsquo;s just a <em>hope</em> at this point :)</p>
+<h2 id="feedback">Feedback</h2>
+<p>As always, let us know in <a href="https://discord.gg/h5C5wEx">Discord</a> or on <a href="https://twitter.com/barnardsgame/">Twitter</a> what you think!</p>
+
+
+			<div class="post-tags">
+				
+				
+				
+			</div>
+		</div>
+
+	</article>
+</main>
+<div class="container">
+    <footer class="py-3 my-4">
+        <p class="text-center" style="color: rgb(193, 193, 193);">© 2022 Pollywog Games</p>
+    </footer>
+</div></div>
+    </body>
+</html>
