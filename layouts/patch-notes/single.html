@@ -1,0 +1,56 @@
+{{ define "main" }}
+<main>
+	<article>
+		<div class="wide-container padded tertiary-bg p-text-mid">
+
+			<div class="title">
+				<h1 class="text-center post-title">{{ .Title }}</h1>
+
+				{{ if .Draft }}
+				<span class="draft-label">DRAFT</span>
+				{{ end }}
+
+				{{ if .Params.author }}
+				<p class="blog-meta">{{ .Params.author }}</p>
+				{{ end }}
+
+				{{ if .Date }}
+				<p class="blog-meta">{{ dateFormat "Jan 2, 2006" .Date }}</p>
+				{{ end }}
+			</div>
+			{{ if isset .Params "tldr" }}
+			<div class="tldr">
+				<strong>tl;dr:</strong>
+				{{ .Params.tldr }}
+			</div>
+			{{ end }}
+
+			<hr />
+
+			<div class="table-of-contents">
+				<h3>Contents</h3>
+				<div id="contents">
+					{{ .TableOfContents }}
+				</div>
+			</div>
+
+			{{ .Content }}
+
+			<div class="post-tags">
+				{{ if ne .Type "page" }}
+				{{ if gt .Params.tags 0 }}
+				<nav class="nav tags">
+					<ul class="tags">
+						{{ range .Params.tags }}
+						<li><a href="{{ " /tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+						{{ end }}
+					</ul>
+				</nav>
+				{{ end }}
+				{{ end }}
+			</div>
+		</div>
+
+	</article>
+</main>
+{{ end }}

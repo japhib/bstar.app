@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patch-notes on Barnard&#39;s Star</title>
+    <link>https://bstar.app/patch-notes/</link>
+    <description>Recent content in Patch-notes on Barnard&#39;s Star</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Aug 2022 11:29:53 -0600</lastBuildDate><atom:link href="https://bstar.app/patch-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>V17a</title>
+      <link>https://bstar.app/patch-notes/v17a/</link>
+      <pubDate>Fri, 19 Aug 2022 11:29:53 -0600</pubDate>
+      
+      <guid>https://bstar.app/patch-notes/v17a/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
