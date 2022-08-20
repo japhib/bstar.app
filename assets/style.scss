@@ -27,6 +27,13 @@ blockquote {
   padding-left: 1em;
   color: #98b5ff;
   overflow: hidden;
+  margin-bottom: 1rem;
+  margin-left: 1.2em;
+  padding-left: .75em;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 code {
@@ -34,7 +41,10 @@ code {
 }
 
 .table-of-contents {
-  float: left;
+  @media screen and (min-width: 975px) {
+    float: left;
+  }
+  
   border: 1px solid white;
   width: fit-content;
   padding: 1em;
@@ -45,14 +55,16 @@ code {
   h3 {
     margin-top: 0;
   }
+}
 
-  a {
-    color: #acb5f9;
-    text-decoration: none;
-  }
+a {
+  color: #acb5f9;
+  text-decoration: none;
 }
 
 h2 {
+  font-size: 2.5em;
+  color: #c3caff;
   clear: both;
 
   // Little dividing line on all h2's except the first
@@ -73,6 +85,7 @@ hr {
 
 h3 {
   margin-top: 1.5em;
+  color: #c3caff;
 }
 
 video {
@@ -81,7 +94,14 @@ video {
 
 img {
   @include centered;
-  max-width: 60%;
+
+  @media screen and (min-width: 975px) {
+    max-width: 60%;
+  }
+
+  @media screen and (max-width: 974px) {
+    max-width: 100%;
+  }
 }
 
 .twitter-tweet {
