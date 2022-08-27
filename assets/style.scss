@@ -107,3 +107,35 @@ img {
 .twitter-tweet {
   @include centered;
 }
+
+// Direct child of div so that nested bullet lists still have no margin
+div>ul>li {
+  margin: .45em 0;
+}
+
+.rainbow {
+  background-image: linear-gradient(to left, violet, rgb(69, 69, 255), green, yellow, orange, red);
+  background-clip: text;
+  color: transparent;
+}
+
+.wavy-animated {
+  animation-name: wavy;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@keyframes wavy {
+  0% {
+    top: 1px;
+  }
+  50% {
+    top: -1px;
+  }
+  100% {
+    top: 1px;
+  }
+}

@@ -42,6 +42,8 @@
 				
 
 				
+				<p class="blog-meta">Jan Bergeson (jamp)</p>
+				
 
 				
 				<p class="blog-meta">Aug 19, 2022</p>
@@ -66,24 +68,32 @@
     </li>
     <li><a href="#new-maps">New Maps!</a>
       <ul>
-        <li><a href="#existing-maps">Existing Maps</a></li>
+        <li><a href="#library-2">Library 2</a></li>
+        <li><a href="#island">Island</a></li>
+        <li><a href="#tetris">Tetris</a></li>
+        <li><a href="#existing-map-updates">Existing Map Updates</a></li>
       </ul>
     </li>
     <li><a href="#updates-to-gameplay-systems">Updates to Gameplay Systems</a>
       <ul>
+        <li><a href="#cooldowns--respawn-counters">Cooldowns &amp; Respawn Counters</a></li>
+        <li><a href="#spawnteleporter-directions">Spawn/Teleporter Directions</a></li>
         <li><a href="#status-effects">Status effects</a></li>
         <li><a href="#stun-and-electrify">Stun and Electrify</a></li>
         <li><a href="#hazards">Hazards</a></li>
+        <li><a href="#unlocking-difficult-units">Unlocking Difficult Units</a></li>
+        <li><a href="#pathing">Pathing</a></li>
+        <li><a href="#shotgun">Shotgun</a></li>
       </ul>
     </li>
-    <li><a href="#humans">Humans</a>
+    <li><a href="#humans-balance-changes">Humans Balance Changes</a>
       <ul>
         <li><a href="#amphibian">Amphibian</a></li>
         <li><a href="#medic">Medic</a></li>
         <li><a href="#ranger">Ranger</a></li>
       </ul>
     </li>
-    <li><a href="#robots">Robots</a>
+    <li><a href="#robots-balance-changes">Robots Balance Changes</a>
       <ul>
         <li><a href="#exterminator">Exterminator</a></li>
         <li><a href="#automechanic">Automechanic</a></li>
@@ -91,7 +101,7 @@
         <li><a href="#physics-engine">Physics Engine</a></li>
       </ul>
     </li>
-    <li><a href="#critters">Critters</a>
+    <li><a href="#critters-balance-changes">Critters Balance Changes</a>
       <ul>
         <li><a href="#grump">Grump</a></li>
         <li><a href="#acid-junkie">Acid Junkie</a></li>
@@ -110,8 +120,9 @@
 <p>(<em>Geez, about time</em>, you might be thinking!)</p>
 <p>Due to the way Barnard&rsquo;s Star was designed and coded, the game logic has to stay deterministic in order to be correctly simulated on both client and server. This means that client and server need to be updated in lockstep with each other. But due to the iOS App Store and the Google Play Store requiring a review of each app version before they&rsquo;re released, we don&rsquo;t really have exact control over when updates are released. It&rsquo;s always &ldquo;within a few days&rdquo; from when we submit the build. This causes disruption to any players with active games.</p>
 <p>For this reason, I&rsquo;ve avoided making any changes to game logic since launch. This means no balance changes. However, the time has come to make breaking changes, and boy, there&rsquo;s a lot of &rsquo;em! I likely won&rsquo;t be making any more balance changes for the next 2-3 months.</p>
+<p>Note: due to the way replays work (less like watching a video and more like re-simulating the game when you know what actions each player will take), you can&rsquo;t watch a replay of a game from a previous version. <strong>That means that when this version, v17, is released, all existing replays will become unwatchable.</strong></p>
 <blockquote>
-<p>Note: due to the way replays work (less like watching a video and more like re-simulating the game when you know what actions each player will take), you can&rsquo;t watch a replay of a game from a previous version. That means that when this version, v17, is released, all existing replays will become unwatchable. We&rsquo;ll keep the games around, so they&rsquo;ll still reflect in your player profile stats. You just won&rsquo;t be able to watch the actual game replay in Barnard&rsquo;s TV. This is another big reason why I don&rsquo;t want to make balance changes very frequently. Eventually, I&rsquo;d like to have a better TV system, where you can watch replays from any patch &ndash; however, that&rsquo;ll be quite a bit of work, and just about every social and gameplay feature is higher priority than it. So it&rsquo;s not going to be implemented for a while.</p>
+<p>We&rsquo;ll keep the games around, so they&rsquo;ll still reflect in your player profile stats. You just won&rsquo;t be able to watch the actual game replay in Barnard&rsquo;s TV. This is another big reason why I don&rsquo;t want to make balance changes very frequently. Eventually, I&rsquo;d like to have a better TV system, where you can watch replays from any patch &ndash; however, that&rsquo;ll be quite a bit of work, and just about every social and gameplay feature is higher priority than it. So it&rsquo;s not going to be implemented for a while.</p>
 </blockquote>
 <h2 id="new-season">New Season</h2>
 <p><code>17a</code> also marks the beginning of <code>Season 2</code>, which makes everything since launch until now <code>Season 1</code>. There might be multiple game versions that don&rsquo;t introduce different gameplay changes, because of the reasons outlined above. So we needed some other way to distinguish between what are effectively two different versions of Barnard&rsquo;s Star, and thus the concept of a &ldquo;Season&rdquo; was born. You can expect a new season every 3-6ish months going forward, at least for the next while, with new content and balance changes each time!</p>
@@ -142,11 +153,12 @@
 </blockquote>
 <h2 id="new-units">New Units!</h2>
 <p>Since we&rsquo;re adding a bunch of backwards-incompatible balance changes right now, this was a great time to add new units! There are 3 new units, one per faction.</p>
+<p>The theme of these new units was initially suicidal/kamikaze &ndash; that got toned down in the design phase though. What we ended up with is Human and Critter units that have self-damaging abilities, and a new Robot unit with novel non-combat abilities.</p>
 <hr>
 <h3 id="human-punk">Human Punk</h3>
 <p><img src="/img/17a/punk.png" alt="Punk"></p>
 <blockquote>
-<p><em>A mechanically-minded tinkerer, well familiar with gadgets and machines of every kind. This intrepid explorer is not afraid of putting herself at risk in order to defeat the enemy.</em></p>
+<p><em>A mechanically-minded tinkerer, specializing in electrical and explosive gadgets. This intrepid explorer is not afraid of putting herself at risk in order to defeat the enemy.</em></p>
 </blockquote>
 <ul>
 <li>Health: 5</li>
@@ -210,7 +222,7 @@
 <h3 id="critter-the-beast">Critter &ldquo;The Beast&rdquo;</h3>
 <p><img src="/img/17a/beast.png" alt="The Beast"></p>
 <blockquote>
-<p><em>This wild creature swings its sizeable weight around the battlefield to break through any obstacle standing in its way. What it lacks in durability, it makes up in nasty surprises.</em></p>
+<p><em>This wild creature swings its sizeable weight around the battlefield to break through any obstacle standing in its way. What it lacks in durability, it makes up with somewhat unconventional posthumous utility.</em></p>
 </blockquote>
 <ul>
 <li>Health: 6</li>
@@ -236,28 +248,67 @@
 <li><em>(Acid:  deals 2 damage to fighters who enter this square. Spreads to and consumes adjacent water and oil squares. Lasts one turn. Turns into a smokescreen when shot.)</em></li>
 </ul>
 <h2 id="new-maps">New Maps!</h2>
-<p>Three new map layouts have been added, one per area. See below:</p>
-<h3 id="existing-maps">Existing Maps</h3>
-<p>Some existing maps have been changed to prevent Psion from being able to hit the enemy nexus on its first turn.</p>
+<p>Three new map layouts have been added, one per area.</p>
+<h3 id="library-2">Library 2</h3>
+<p>The new map on Anchorage Station is called <em>Library 2</em> and features a 2-lane thoroughfare across the middle of the map. It should encourage more direct conflict, as opposed to the current Library map which tends to stall out games a bit, with neither team willing to cross the chokepoint in the middle of the map. (The existing Library is now &ldquo;Library 1&rdquo;.)</p>
+<p><img src="/img/17a/anchorage-library2.png" alt="Library 2 Map"></p>
+<h3 id="island">Island</h3>
+<p>The new map on the Marauder is called <em>Island</em>, and features, well, a sort of island in the middle of the map. It also features a 3rd teleporter color.</p>
+<p><img src="/img/17a/marauder-island.png" alt="Island Map"></p>
+<h3 id="tetris">Tetris</h3>
+<p>The new map on the Phoenix is called Tetris, because of its oddly shaped spawn areas. It features multiple lanes through the middle of the map and teleporters placed immediately next to the spawn point.</p>
+<p><img src="/img/17a/phoenix-tetris.png" alt="Tetris Map"></p>
+<h3 id="existing-map-updates">Existing Map Updates</h3>
+<p>Some existing maps have been changed to prevent Psion from being able to hit the enemy nexus on its first turn. The updated maps are pictured below.</p>
+<p><em>Anchorage Station - Chasm:</em></p>
+<p><img src="/img/17a/chasm-changed.png" alt="updated Chasm"></p>
+<p><em>The Phoenix - Standard:</em></p>
+<p><img src="/img/17a/phoenix-standard-changed.png" alt="updated Phoenix Standard"></p>
 <h2 id="updates-to-gameplay-systems">Updates to Gameplay Systems</h2>
+<h3 id="cooldowns--respawn-counters">Cooldowns &amp; Respawn Counters</h3>
+<p>Previously, cooldowns &amp; respawn counters would count down at the beginning of each turn. This meant that if an enemy unit&rsquo;s portrait and there was a &ldquo;1&rdquo; on their icon, that meant they were respawning the next turn. Similarly, if you selected an enemy unit and there was a &ldquo;1&rdquo; on one of their abilities, that ability would be <em>off</em> cooldown (available for use) on their next turn.</p>
+<p>I received feedback multiple times, and from multiple different people, that this was confusing. So, this has been changed - cooldowns &amp; respawn counters now update at the <em>end</em> of a player&rsquo;s turn. This means that an enemy is respawning on the very next turn only if their portrait has a &ldquo;0&rdquo; on it. And if you select an enemy and their ability shows any cooldown at all (1 or above), you know that ability will <em>not</em> be available on their next turn.</p>
+<p>That might not totally make sense, but that&rsquo;s okay. I&rsquo;m confident that this system will be much more intuitive to understand.</p>
+<h3 id="spawnteleporter-directions">Spawn/Teleporter Directions</h3>
+<p>When a unit steps on a teleporter, they teleport to the matching one. But what if someone is standing on the matching one? The game will look for a nearby empty space &ndash; and this change deals with which empty space is chosen.</p>
+<p><strong>Note:</strong> This is the same algorithm that is used to determine where fighters spawn, so this section applies to spawn points as much as teleporters.</p>
+<p>Previously, the game would always check the square directly above the teleporter, and then check in a clockwise circle to find the first empty spot:</p>
+<p>TODO old version screenshot</p>
+<p>This led to some asymmetries, usually giving one team an advantage on certain maps. To fix this, the algorithm has been updated to take into account where on the map the teleporter (or spawn point) is. It&rsquo;ll choose whether to check up or down first, and whether to go clockwise or counter-clockwise after that, based on what quadrant of the map the teleporter is in. It&rsquo;ll favor spaces that are closer to the center of the map, like so:</p>
+<p>TODO new version screenshot</p>
+<p>If this is hard to remember, have no fear! Selecting a teleporter now shows numbers indicating which direction the teleporter will go towards first, just as in the above screenshots.</p>
+<p>Similarly, selecting an about-to-respawn fighter also shows a preview of which squares they (and other respawning fighters) will respawn in:</p>
+<p>TODO respawn preview screenshot</p>
+<p>On some maps, spawn points were slightly asymmetrical between sides. With this change, those maps have been fixed so the spawn points are now totally symmetrical.</p>
 <h3 id="status-effects">Status effects</h3>
-<ul>
-<li>This system has been reworked overall. Previously, status effects were either hidden, or had a specific animation - for example, stunned characters had the &ldquo;zzz&rdquo; icons and electrified characters shook and had lightning pulses across their body.</li>
-<li>Now, they&rsquo;ll all be visible in a unified spot. A new UI element has been added where you can view status icons for a selected unit.</li>
-<li>Normally, just an icon is shown, but you can long press on the icon to get a larger popup with a description of each status effect.</li>
-</ul>
+<p>This system has been reworked overall. Previously, status effects were either hidden, or had a specific animation - for example, stunned characters had the &ldquo;zzz&rdquo; icons and electrified characters shook and had lightning pulses across their body.</p>
+<p>Now, they&rsquo;ll all be visible in a unified spot. A new UI element has been added where you can view status icons for a selected unit.</p>
+<p>TODO status icon screenshot</p>
+<p>Normally, just an icon is shown, but you can long press on the icon to get a larger popup with a description of each status effect.</p>
+<p>TODO status icon details screenshot</p>
 <h3 id="stun-and-electrify">Stun and Electrify</h3>
-<ul>
-<li>Units cannot be stunned or electrified more than 1 turn in a row. When the stun/electrify wears off, they get a new status effect called Stun Immunity for one turn. This only prevents the stun - units will still take 1 damage when electrified, and be knocked back a square when hit by Knockout Punch, etc.</li>
-</ul>
+<p><code>Units now cannot be stunned or electrified more than 1 turn in a row.</code> When the stun/electrify wears off, they get a new status effect called Stun Immunity for one turn. This only prevents the stun - units will still take 1 damage when electrified, and be knocked back a square when hit by Knockout Punch, etc.</p>
 <h3 id="hazards">Hazards</h3>
 <p>A &ldquo;Hazard&rdquo; is anything that can be placed on the map, aside from fighters, cover, and teleporters: water, oil, fire, acid, smokescreen, land mines, and acid bubbles (which also count as cover).</p>
 <p>Previously, there were some hard-to-figure-out rules about which hazards could replace other hazards &ndash; for example, only water can replace fire, and smokescreen can&rsquo;t replace acid. Or something like that. This led to messages like this one:</p>
 <p><img src="/img/17a/discord-hazard-confusion.png" alt="Confusion in Discord about hazards"></p>
 <p>If I can&rsquo;t even remember them, I can&rsquo;t expect others to remember them. So, those rules have been removed!</p>
 <p>To sum up: <code>Any ability that places a hazard is now able to replace any other hazard.</code></p>
+<h3 id="unlocking-difficult-units">Unlocking Difficult Units</h3>
+<p>Previously, the conditions to unlock Overlord, Physics Engine, and Medic were very difficult to achieve, often requiring either dumb luck, or coordination with your opponent. These have been changed to be easier.</p>
+<ul>
+<li>To unlock Overlord: <code>summon 20 minions total</code></li>
+<li>To unlock Physics Engine: <code>deal damage by pushing or pulling enemies 5 times</code></li>
+<li>To unlock Medic: <code>heal 20 points of health by any method</code></li>
+</ul>
+<h3 id="pathing">Pathing</h3>
+<p>Unit pathing was fairly dumb before, with no consideration for avoiding hazards. It has been improved now, so that if there is more than one route to the same spot, units will favor the path that doesn&rsquo;t involve taking damage from hazards, even if it takes extra movement.</p>
+<h3 id="shotgun">Shotgun</h3>
+<p>Previously, if any of the 2 side bullets from a Shotgun shot (i.e. not the middle one) hit cover, they wouldn&rsquo;t damage that cover. This has been fixed.</p>
+<p>TODO gif of Shotgun damaging 3 squares of cover</p>
+<hr>
 <p>&hellip; And now, onto the actual balance changes!</p>
-<h2 id="humans">Humans</h2>
+<h2 id="humans-balance-changes">Humans Balance Changes</h2>
 <p><em>Amphibian and Medic get buffs, Ranger gets a small nerf.</em></p>
 <h3 id="amphibian">Amphibian</h3>
 <p>During the beta, Water/Electricity combos were terrifying - Amphibian sprayed water 3 tiles wide, electricity spread through fighters as well as water, and you only had to be <em>next</em> to the water (or someone else getting electrified) to be electrified yourself. There were a few matches where one team got completely stunlocked for several turns in a row, and there was simply nothing you could do about it.</p>
@@ -273,16 +324,12 @@
 </ul>
 <h3 id="medic">Medic</h3>
 <p>Our medical units have been underperforming &ndash; Human Medic in particular had staggeringly low pick rates and win rates. Her signature ability Med Kit is getting a buff, and I&rsquo;m switching out the generic stun of Sketchy Syringe for a new ability called Electric Punch. This new ability does essentially the same thing as the old one, but since it&rsquo;s electricity instead of a regular stun, it has synergy with other Human units that spread water on the map.</p>
-<p>Thanks @Scaaat in the Discord for the suggestion!</p>
-<p><code>Electric Punch</code></p>
+<p><code>Electric Punch</code> <em>(New ability)</em></p>
 <ul>
-<li>Medic uses her unique, powered-up electric glove to punch the target enemy, shocking them and dealing 1 extra damage.
+<li><code>Medic uses her unique, powered-up electric glove to punch the target enemy, shocking them and dealing 1 extra damage.</code>
 Targets adjacent enemies and cover.</li>
 <li><em>(Electricity:  deals 1 damage, removes shields, and stuns enemy and friendly fighters for one turn. Spreads to nearby squares through water and acid. A unit cannot be stunned two turns in a row.)</em></li>
-</ul>
-<p><code>Sketchy Syringe</code></p>
-<ul>
-<li><code>Damage 2 -&gt; 3.</code> This will make it better for finishing off injured enemies (or taking a chunk out of healthy ones). I also don&rsquo;t foresee it being abused; it has a cooldown of 1, meaning it can&rsquo;t be used multiple times in a single turn on kill resets.</li>
+<li>Thanks @Scaaat in the Discord for suggesting this ability!</li>
 </ul>
 <p><code>Med Kit</code></p>
 <ul>
@@ -300,7 +347,7 @@ Targets adjacent enemies and cover.</li>
 <li><code>Range 4 -&gt; 3.</code> With such a long range, he could be halfway across the map and still throw the smoke grenade to shield allies. Reducing the range on this ability forces a bit more tactical play around it.</li>
 <li>Smokescreen description clarified to explain that it blocks only primary attacks, not abilities.</li>
 </ul>
-<h2 id="robots">Robots</h2>
+<h2 id="robots-balance-changes">Robots Balance Changes</h2>
 <p><em>TL;DR</em></p>
 <ul>
 <li><em>Reflect Projectiles is fun again!</em></li>
@@ -315,6 +362,8 @@ Targets adjacent enemies and cover.</li>
 <p>Not only is that sad for this ability, but it makes Exterminator pretty lackluster. I think it&rsquo;s been an interesting learning experience, but the cons outweight the pros in this situation. So I&rsquo;ve decided to bring back the Reflect Projectile buff&rsquo;s stickiness! That means that <strong>yes, it will be able to be used offensively again.</strong></p>
 <p>Here&rsquo;s the new description:</p>
 <p><code>Exterminator reflects the first projectile shot at it. When used, recharges after 1 turns.</code></p>
+<p>TODO gif of Exterminator using Reflect Projectiles offensively</p>
+<p>Happy <em>Reflect</em>-ing!</p>
 <h3 id="automechanic">Automechanic</h3>
 <p><code>Oil Change</code></p>
 <ul>
@@ -324,7 +373,7 @@ Targets adjacent enemies and cover.</li>
 <h3 id="defragmenter">Defragmenter</h3>
 <p><code>Sketchy Syringe</code></p>
 <ul>
-<li><code>Damage 2 -&gt; 3.</code> See the notes on the same change for the Human Medic, above.</li>
+<li><code>Damage 2 -&gt; 3.</code> This will make it better for finishing off injured enemies (or taking a chunk out of healthy ones). I also don&rsquo;t foresee it being abused; it has a cooldown of 1, meaning it can&rsquo;t be used multiple times in a single turn on kill resets.</li>
 </ul>
 <h3 id="physics-engine">Physics Engine</h3>
 <p>Physics Engine is currently extremely powerful - not only does it do 3 base damage and have the highest base movement speed in the game, it has the utility to manipulate allies, enemies, <em>and</em> cover. And due to this power being concentrated in its base movement and primary attack, it became an absolute beast on the battlefield when it could chain together a few kills.</p>
@@ -336,7 +385,7 @@ Targets adjacent enemies and cover.</li>
 <ul>
 <li><code>Base damage: 3 -&gt; 2.</code> This attack can still deal 3 damage to a unit if they&rsquo;re knocked into a wall or another unit, it&rsquo;s just the damage when not knocking into anything that&rsquo;s unchanged. Before this change, Physics Engine dealt a staggering 4 damage with its melee attacks &ndash; more than any other attack or ability in the game!</li>
 </ul>
-<h2 id="critters">Critters</h2>
+<h2 id="critters-balance-changes">Critters Balance Changes</h2>
 <p><em>Buffs all around! &hellip; Except for Overlord. Overlord gets a nerf.</em></p>
 <h3 id="grump">Grump</h3>
 <p>Our boy Grumpy has also been underperforming. He&rsquo;s one of the starting characters and has a strong fantasy &ndash; the large, tough, regenerating mound of flesh &ndash; but in-game he&rsquo;s not delivering. He&rsquo;s just too easy to kill at the moment. To remedy this, his health is being increased:</p>
@@ -355,9 +404,9 @@ Targets adjacent enemies and cover.</li>
 <ul>
 <li><code>Movement on acid only costs half a point.</code></li>
 </ul>
+<p>TODO gif of acid surfing</p>
 <h3 id="flock-doc---renamed-to-gargoyle">Flock Doc - renamed to Gargoyle</h3>
 <p>Gargoyle (formerly Flock Doc) is yet another medical unit, and like the medic units on the other two factions, he is also underperforming. Also like them, he&rsquo;s getting buffs, including a sweet new ability!</p>
-<p>Thanks to @WispyLuako for suggesting this thematically-appropriate ability in Discord!</p>
 <ul>
 <li><code>Movement: 6 -&gt; 5.</code> Gargoyle&rsquo;s new ability is going to increase his mobility a LOT, so 6 movement is no longer necessary.</li>
 </ul>
@@ -372,7 +421,9 @@ Targets adjacent enemies and cover.</li>
 <li>This ability greatly increases Gargoyle&rsquo;s mobility. It&rsquo;s similar to Hypertunnel (Psion&rsquo;s passive) but also provides movement over 1-wide gaps, as well as enemies.</li>
 <li><em>Why does Gargoyle get a better mobility passive than Psion?</em> Great question, with two answers: Gargoyle doesn&rsquo;t have move-after-attack, and his attack is melee (range 1). A melee attack means that he must be much closer to the enemy fighters or nexus in order to deal damage, which is inherently riskier. And no move-after-attack means that he doesn&rsquo;t have an escape, so he has to be committed to an attack unless he gets a kill.</li>
 <li>As a result of this, Gargoyle&rsquo;s play patterns end up being very different from Psion&rsquo;s. Where Psion is an annoying unit that pokes at your nexus and then scoots back behind cover, Gargoyle flies across gaps to make daring kills and heroic rescues, finishing off enemies and healing low teammates.</li>
+<li>Thanks to @WispyLuako for suggesting this thematically-appropriate ability in Discord!</li>
 </ul>
+<p>TODO gif of flying</p>
 <h3 id="overlord">Overlord</h3>
 <p>Overlord is one of the units that has been unequivocally <em>over</em>-performing. The ability to summon another fighter is already pretty powerful, and combined with Acid Bubble&rsquo;s tendency to lock of large parts of the map for much of the game, Overlord became A) pretty overbearing to play against, and B) a must-pick for Critter teams. These changes aim to bring Overlord back in line with the rest of the team, and encourage more strategic play around where to place acid bubbles.</p>
 <p><code>Acid Bubble</code></p>
@@ -380,21 +431,29 @@ Targets adjacent enemies and cover.</li>
 <li><code>Changed:</code> when the Acid Bubble is damaged, instead of spreading acid to all adjacent squares, it now only places acid on the square it was directly on top of.</li>
 </ul>
 <h2 id="future-roadmap">Future Roadmap</h2>
+<p><img src="/img/road.png" alt="road"></p>
 <p>Before wrapping up these already-crazy-long patch notes, I wanted to give some information about future development direction. Here are some developments you can expect in the near future:</p>
 <ul>
-<li>Add friends &amp; invite them to games</li>
+<li>Add friends &amp; invite them to games!</li>
 <li>More ways to view people&rsquo;s profiles</li>
 <li>More ways to filter viewable games on Barnard&rsquo;s TV</li>
-<li>Link your account to Discord</li>
-<li>Custom game options, such as different number of fighters and forced random team choices</li>
-<li>Lots more quality of life changes and bugfixes</li>
+<li>Link your in-game account to Discord, and view other people&rsquo;s Discord usernames from in-game</li>
+<li>Custom game options, such as:
+<ul>
+<li>different number of fighters (8 vs. 8, anyone?)</li>
+<li>forced random team choices</li>
+<li>customizable base health</li>
+<li>&hellip; and more - I don&rsquo;t want to ruin the surprise!</li>
+</ul>
+</li>
+<li>Lots more quality of life changes and bugfixes!</li>
 </ul>
 <p>In the longer-term, here are the other major things I have planned:</p>
 <ul>
 <li>More units! (I have solid plans for at least 2 more per faction, and likely won&rsquo;t stop there)</li>
-<li>Map editor</li>
-<li>Smarter AI, including an Expert difficulty level</li>
-<li>Team colors other than red + blue</li>
+<li>Map editor!</li>
+<li>Smarter AI, including an Expert difficulty level - even harder than the current Hard!</li>
+<li>Team colors other than red + blue (maybe <span class="rainbow wavy">rainbow</span>?)</li>
 <li>Ability to view replays from a past version of the game</li>
 </ul>
 <p>In the <em>much</em> longer term, here are some big things I hope to implement <em>eventually</em>:</p>
@@ -420,6 +479,31 @@ Targets adjacent enemies and cover.</li>
     <footer class="py-3 my-4">
         <p class="text-center" style="color: rgb(193, 193, 193);">© 2022 Pollywog Games</p>
     </footer>
-</div></div>
+</div>
+
+<script>
+    function updateText() {
+        let delay = 200;
+        let wavyAll = document.querySelectorAll(".wavy");
+
+        for (const wavy of wavyAll) {
+            wavy.innerHTML = wavy.textContent
+                .split("")
+                .map(letter => {
+                    console.log(letter);
+                    return `<span>` + letter + `</span>`;
+                })
+                .join("");
+
+            Array.from(wavy.children).forEach((span, index) => {
+                setTimeout(() => {
+                    span.classList.add("wavy-animated");
+                }, index * 60 + delay);
+            });
+        }
+    }
+
+    updateText();
+</script></div>
     </body>
 </html>

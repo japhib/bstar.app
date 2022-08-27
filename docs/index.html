@@ -41,7 +41,32 @@
     <footer class="py-3 my-4">
         <p class="text-center" style="color: rgb(193, 193, 193);">© 2022 Pollywog Games</p>
     </footer>
-</div></div>
+</div>
+
+<script>
+    function updateText() {
+        let delay = 200;
+        let wavyAll = document.querySelectorAll(".wavy");
+
+        for (const wavy of wavyAll) {
+            wavy.innerHTML = wavy.textContent
+                .split("")
+                .map(letter => {
+                    console.log(letter);
+                    return `<span>` + letter + `</span>`;
+                })
+                .join("");
+
+            Array.from(wavy.children).forEach((span, index) => {
+                setTimeout(() => {
+                    span.classList.add("wavy-animated");
+                }, index * 60 + delay);
+            });
+        }
+    }
+
+    updateText();
+</script></div>
 </body>
 
 </html>
