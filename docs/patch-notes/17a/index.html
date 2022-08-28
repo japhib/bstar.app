@@ -273,19 +273,17 @@
 <p>When a unit steps on a teleporter, they teleport to the matching one. But what if someone is standing on the matching one? The game will look for a nearby empty space &ndash; and this change deals with which empty space is chosen.</p>
 <p><strong>Note:</strong> This is the same algorithm that is used to determine where fighters spawn, so this section applies to spawn points as much as teleporters.</p>
 <p>Previously, the game would always check the square directly above the teleporter, and then check in a clockwise circle to find the first empty spot:</p>
-<p>TODO old version screenshot</p>
+<p><img src="/img/17a/single-teleporter.png" alt="single-teleporter"></p>
 <p>This led to some asymmetries, usually giving one team an advantage on certain maps. To fix this, the algorithm has been updated to take into account where on the map the teleporter (or spawn point) is. It&rsquo;ll choose whether to check up or down first, and whether to go clockwise or counter-clockwise after that, based on what quadrant of the map the teleporter is in. It&rsquo;ll favor spaces that are closer to the center of the map, like so:</p>
-<p>TODO new version screenshot</p>
+<p><img src="/img/17a/all-teleporters.png" alt="all-teleporters"></p>
 <p>If this is hard to remember, have no fear! Selecting a teleporter now shows numbers indicating which direction the teleporter will go towards first, just as in the above screenshots.</p>
 <p>Similarly, selecting an about-to-respawn fighter also shows a preview of which squares they (and other respawning fighters) will respawn in:</p>
-<p>TODO respawn preview screenshot</p>
+<p><img src="/img/17a/respawn-preview.png" alt="respawn-preview"></p>
+<p>(Thanks to @Louije in the Discord for this robust suggestion &ndash; he even included a mockup of how it should look!)</p>
 <p>On some maps, spawn points were slightly asymmetrical between sides. With this change, those maps have been fixed so the spawn points are now totally symmetrical.</p>
 <h3 id="status-effects">Status effects</h3>
 <p>This system has been reworked overall. Previously, status effects were either hidden, or had a specific animation - for example, stunned characters had the &ldquo;zzz&rdquo; icons and electrified characters shook and had lightning pulses across their body.</p>
-<p>Now, they&rsquo;ll all be visible in a unified spot. A new UI element has been added where you can view status icons for a selected unit.</p>
-<p>TODO status icon screenshot</p>
-<p>Normally, just an icon is shown, but you can long press on the icon to get a larger popup with a description of each status effect.</p>
-<p>TODO status icon details screenshot</p>
+<p>Now, they&rsquo;ll all be visible in a unified spot. A new UI element has been added where you can view status icons for a selected unit. Normally, just an icon is shown, but you can long press on the icon to get a larger popup with a description of each status effect.</p>
 <h3 id="stun-and-electrify">Stun and Electrify</h3>
 <p><code>Units now cannot be stunned or electrified more than 1 turn in a row.</code> When the stun/electrify wears off, they get a new status effect called Stun Immunity for one turn. This only prevents the stun - units will still take 1 damage when electrified, and be knocked back a square when hit by Knockout Punch, etc.</p>
 <h3 id="hazards">Hazards</h3>
@@ -305,7 +303,6 @@
 <p>Unit pathing was fairly dumb before, with no consideration for avoiding hazards. It has been improved now, so that if there is more than one route to the same spot, units will favor the path that doesn&rsquo;t involve taking damage from hazards, even if it takes extra movement.</p>
 <h3 id="shotgun">Shotgun</h3>
 <p>Previously, if any of the 2 side bullets from a Shotgun shot (i.e. not the middle one) hit cover, they wouldn&rsquo;t damage that cover. This has been fixed.</p>
-<p>TODO gif of Shotgun damaging 3 squares of cover</p>
 <hr>
 <p>&hellip; And now, onto the actual balance changes!</p>
 <h2 id="humans-balance-changes">Humans Balance Changes</h2>
@@ -362,8 +359,7 @@ Targets adjacent enemies and cover.</li>
 <p>Not only is that sad for this ability, but it makes Exterminator pretty lackluster. I think it&rsquo;s been an interesting learning experience, but the cons outweight the pros in this situation. So I&rsquo;ve decided to bring back the Reflect Projectile buff&rsquo;s stickiness! That means that <strong>yes, it will be able to be used offensively again.</strong></p>
 <p>Here&rsquo;s the new description:</p>
 <p><code>Exterminator reflects the first projectile shot at it. When used, recharges after 1 turns.</code></p>
-<p>TODO gif of Exterminator using Reflect Projectiles offensively</p>
-<p>Happy <em>Reflect</em>-ing!</p>
+<p><img src="/img/17a/reflect-offensive.gif" alt="reflect-offensive"></p>
 <h3 id="automechanic">Automechanic</h3>
 <p><code>Oil Change</code></p>
 <ul>
@@ -404,7 +400,6 @@ Targets adjacent enemies and cover.</li>
 <ul>
 <li><code>Movement on acid only costs half a point.</code></li>
 </ul>
-<p>TODO gif of acid surfing</p>
 <h3 id="flock-doc---renamed-to-gargoyle">Flock Doc - renamed to Gargoyle</h3>
 <p>Gargoyle (formerly Flock Doc) is yet another medical unit, and like the medic units on the other two factions, he is also underperforming. Also like them, he&rsquo;s getting buffs, including a sweet new ability!</p>
 <ul>
@@ -423,7 +418,6 @@ Targets adjacent enemies and cover.</li>
 <li>As a result of this, Gargoyle&rsquo;s play patterns end up being very different from Psion&rsquo;s. Where Psion is an annoying unit that pokes at your nexus and then scoots back behind cover, Gargoyle flies across gaps to make daring kills and heroic rescues, finishing off enemies and healing low teammates.</li>
 <li>Thanks to @WispyLuako for suggesting this thematically-appropriate ability in Discord!</li>
 </ul>
-<p>TODO gif of flying</p>
 <h3 id="overlord">Overlord</h3>
 <p>Overlord is one of the units that has been unequivocally <em>over</em>-performing. The ability to summon another fighter is already pretty powerful, and combined with Acid Bubble&rsquo;s tendency to lock of large parts of the map for much of the game, Overlord became A) pretty overbearing to play against, and B) a must-pick for Critter teams. These changes aim to bring Overlord back in line with the rest of the team, and encourage more strategic play around where to place acid bubbles.</p>
 <p><code>Acid Bubble</code></p>
