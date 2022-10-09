@@ -6,7 +6,17 @@
     <description>Recent content on Barnard&#39;s Star</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Aug 2022 11:29:53 -0600</lastBuildDate><atom:link href="https://bstar.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 14:05:05 -0600</lastBuildDate><atom:link href="https://bstar.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>17b Patch Notes</title>
+      <link>https://bstar.app/patch-notes/17b/</link>
+      <pubDate>Sun, 09 Oct 2022 14:05:05 -0600</pubDate>
+      
+      <guid>https://bstar.app/patch-notes/17b/</guid>
+      <description>This patch mainly consists of bugfixes relating to changes made in the last patch, 17a (the one that introduced the beginning of season 2). Here&amp;rsquo;s a big ol&amp;rsquo; list of &amp;rsquo;em.
+Bugfixes When Physics Engine shoves a fighter into cover, it didn&amp;rsquo;t deal damage to the cover. Now it does. For the purposes of unlocking Catalyst, &amp;ldquo;electrify&amp;rdquo; wouldn&amp;rsquo;t count as stun. Now it does. Fixed a bug where shooting an acid bubble created a smokescreen tile instead of an acid tile.</description>
+    </item>
+    
     <item>
       <title>17a Patch Notes - Beginning of Season 2</title>
       <link>https://bstar.app/patch-notes/17a/</link>

@@ -25,6 +25,23 @@
 			</div>
 			{{ end }}
 
+			{{ if or .PrevPage .NextPage }}
+				<hr />
+				<div class="nav footer-links">
+					{{ if .PrevPage }}
+					<div class="footer-link previous-post">
+						<a href="{{ .PrevPage.Permalink }}?ref=footer">« Previous Post: {{ .PrevPage.Title | truncate 50 "..."}}</a>
+					</div>
+					{{ end }}
+			
+					{{ if .NextPage }}
+					<div class="footer-link next-post">
+						<a href="{{ .NextPage.Permalink }}?ref=footer">Next Post: {{ .NextPage.Title | truncate 50 "..." }} »</a>
+					</div>
+					{{ end }}
+				</div>
+			{{ end }}
+
 			<hr />
 
 			<div class="table-of-contents">
@@ -49,6 +66,23 @@
 				{{ end }}
 				{{ end }}
 			</div>
+
+			{{ if or .PrevPage .NextPage }}
+				<hr />
+				<div class="nav footer-links">
+					{{ if .PrevPage }}
+					<div class="footer-link previous-post">
+						<a href="{{ .PrevPage.Permalink }}?ref=footer">« Previous Post: {{ .PrevPage.Title | truncate 50 "..."}}</a>
+					</div>
+					{{ end }}
+			
+					{{ if .NextPage }}
+					<div class="footer-link next-post">
+						<a href="{{ .NextPage.Permalink }}?ref=footer">Next Post: {{ .NextPage.Title | truncate 50 "..." }} »</a>
+					</div>
+					{{ end }}
+				</div>
+			{{ end }}
 		</div>
 
 	</article>

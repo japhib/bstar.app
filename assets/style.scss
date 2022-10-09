@@ -139,3 +139,33 @@ div>ul>li {
     top: 1px;
   }
 }
+
+.footer-links {
+  // display: flex;
+  // max-width: fit-content;
+
+  .next-post {
+    display: block;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 2em;
+  }
+
+  .previous-post {
+
+  }
+}
+
+.posts {
+  .post {
+    margin: 1.25em 0;
+
+    .post-list-title {
+      // Halfway between regular (400) and bold (700)
+      font-weight: 550;
+
+      font-size: 1.2em;
+    }
+  }
+}
+
