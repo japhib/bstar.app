@@ -117,3 +117,6 @@ div > ul > li {
   .posts .post .post-list-title {
     font-weight: 550;
     font-size: 1.2em; }
+
+.smallish-img img {
+  max-width: 175px; }

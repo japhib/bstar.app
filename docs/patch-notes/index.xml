@@ -6,7 +6,18 @@
     <description>Recent content in Patch-notes on Barnard&#39;s Star</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Oct 2022 14:05:05 -0600</lastBuildDate><atom:link href="https://bstar.app/patch-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Nov 2022 13:37:00 -0600</lastBuildDate><atom:link href="https://bstar.app/patch-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>17d Patch Notes - Friends system</title>
+      <link>https://bstar.app/patch-notes/17d/</link>
+      <pubDate>Thu, 24 Nov 2022 13:37:00 -0600</pubDate>
+      
+      <guid>https://bstar.app/patch-notes/17d/</guid>
+      <description>This patch adds a new Friends system! Add other players as friends, and invite them to games, directly from the app. It also adds the ability to choose an icon for your profile, and fixes several bugs from previous updates.
+Profile icon Customize your profile by choosing an icon from your badges, and the fighters you&amp;rsquo;ve unlocked:
+Use the pencil icon in the top right of your profile to change which icon is being displayed.</description>
+    </item>
+    
     <item>
       <title>17b Patch Notes</title>
       <link>https://bstar.app/patch-notes/17b/</link>
