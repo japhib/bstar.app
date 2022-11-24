@@ -1,0 +1,122 @@
+body {
+  background: #131c2e; }
+
+.nav-item .nav-link {
+  color: #98b5ff;
+  cursor: pointer; }
+
+.draft-label {
+  color: #913dcd; }
+
+.post-title {
+  font-size: 3em;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+
+blockquote {
+  border-left: 3px solid #3e5073;
+  padding-left: 1em;
+  color: #98b5ff;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  margin-left: 1.2em;
+  padding-left: .75em; }
+  blockquote p:last-child {
+    margin-bottom: 0; }
+
+code {
+  color: #ff89c6; }
+
+.table-of-contents {
+  border: 1px solid white;
+  width: fit-content;
+  padding: 1em;
+  padding-bottom: 0;
+  margin: 1em;
+  background-color: #1a2954; }
+  @media screen and (min-width: 975px) {
+    .table-of-contents {
+      float: left; } }
+  .table-of-contents h3 {
+    margin-top: 0; }
+
+a {
+  color: #acb5f9;
+  text-decoration: none; }
+
+h2 {
+  font-size: 2.5em;
+  color: #c3caff;
+  clear: both; }
+  h2:not(:nth-of-type(1))::before {
+    display: inline-block;
+    content: "";
+    border-top: 2px solid #2d4580;
+    width: 100%;
+    margin: 3em 0 .2em 0;
+    transform: translateY(-1rem); }
+
+hr {
+  border-top: 2px solid #2d4580;
+  margin: 2em; }
+
+h3 {
+  margin-top: 1.5em;
+  color: #c3caff; }
+
+video {
+  display: block;
+  margin: 0px auto; }
+
+img {
+  display: block;
+  margin: 0px auto; }
+  @media screen and (min-width: 975px) {
+    img {
+      max-width: 60%; } }
+  @media screen and (max-width: 974px) {
+    img {
+      max-width: 100%; } }
+.twitter-tweet {
+  display: block;
+  margin: 0px auto; }
+
+div > ul > li {
+  margin: .45em 0; }
+
+.rainbow {
+  background-image: linear-gradient(to left, violet, #4545ff, green, yellow, orange, red);
+  background-clip: text;
+  color: transparent; }
+
+.wavy-animated {
+  animation-name: wavy;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0; }
+
+@keyframes wavy {
+  0% {
+    top: 1px; }
+  50% {
+    top: -1px; }
+  100% {
+    top: 1px; } }
+
+.footer-links .next-post {
+  display: block;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 2em; }
+
+.posts .post {
+  margin: 1.25em 0; }
+  .posts .post .post-list-title {
+    font-weight: 550;
+    font-size: 1.2em; }
+
+.smallish-img img {
+  max-width: 175px; }

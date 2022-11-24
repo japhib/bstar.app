@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+
+    
+    
+    <link rel="stylesheet" href="https://bstar.app/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+
+    <title>Barnard's Star</title>
+</head><body>
+        <div class="container content text-light"><div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+            <span class="fs-4">Barnard&#39;s Star</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://discord.gg/h5C5wEx" class="nav-link">Discord</a></li>
+            <li class="nav-item"><a href="/patch-notes" class="nav-link">Patch Notes</a></li>
+        </ul>
+    </header>
+</div>
+<main>
+	<article>
+		<div class="wide-container padded tertiary-bg p-text-mid">
+
+			<div class="title">
+				<h1 class="text-center post-title">17b Patch Notes</h1>
+
+				
+
+				
+				<p class="blog-meta">Jan Bergeson (jamp)</p>
+				
+
+				
+				<p class="blog-meta">Oct 9, 2022</p>
+				
+			</div>
+			
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/17a/?ref=footer">« Previous Post: 17a Patch Notes - Beginning of Season 2</a>
+					</div>
+					
+			
+					
+					<div class="footer-link next-post">
+						<a href="https://bstar.app/patch-notes/17d/?ref=footer">Next Post: 17d Patch Notes - Friends system »</a>
+					</div>
+					
+				</div>
+			
+
+			<hr />
+
+			<div class="table-of-contents">
+				<h3>Contents</h3>
+				<div id="contents">
+					<nav id="TableOfContents">
+  <ul>
+    <li><a href="#bugfixes">Bugfixes</a></li>
+    <li><a href="#balance-changes">Balance Changes</a>
+      <ul>
+        <li><a href="#critter-_the-beast_">Critter <em>The Beast</em></a></li>
+        <li><a href="#critter-gargoyle">Critter Gargoyle</a></li>
+      </ul>
+    </li>
+    <li><a href="#matchmaking-changes">Matchmaking Changes</a></li>
+    <li><a href="#feedback">Feedback</a></li>
+  </ul>
+</nav>
+				</div>
+			</div>
+
+			<p>This patch mainly consists of bugfixes relating to changes made in the last patch, 17a (the one that introduced the beginning of season 2). Here&rsquo;s a big ol&rsquo; list of &rsquo;em.</p>
+<h2 id="bugfixes">Bugfixes</h2>
+<ul>
+<li>When an ability shoves a fighter into cover, it didn&rsquo;t deal damage to the cover. Now it does.</li>
+<li>For the purposes of unlocking Catalyst, &ldquo;electrify&rdquo; wouldn&rsquo;t count as stun. Now it does.</li>
+<li>Fixed a bug where shooting an acid bubble created a smokescreen tile instead of an acid tile.</li>
+<li>Fixed a bug where if a Punk used its electrifying Overload ability while standing on a line of water (i.e. from Amphibian), it could deal more than 1 damage based on how many water tiles the ability hit directly.</li>
+<li>Fixed a bug where using flamethrower on a tile that contained oil would deal double damage.</li>
+<li>Fixed a bug causing Beast not to explode into acid on death in certain scenarios.</li>
+<li>Fixed a bug where if Medic used Electric Punch on an enemy and killed that enemy, Medic would stun herself.</li>
+<li>Corrected Electric Punch tooltip and several others that said the ability had range 0.</li>
+<li>Fixed teleporter directions for the Yellow teleporter on the Island map to be actually symmetrical.</li>
+<li>Fixed a bug causing Commando to lose the temporary shield it got from its Charge ability immediately at the end of its own turn.</li>
+<li>Fix for Catalyst being able to &ldquo;wake up&rdquo; a stunned unit by giving it more movement.</li>
+<li>Fix for double badges showing up in player profiles.</li>
+<li>Fix for unit pathing to avoid land mines when possible.</li>
+<li>Fix for Amphibian&rsquo;s Spray Water ability no longer shooting water further when it targets existing water.</li>
+<li>Fixed a bug causing a brief white flash on-screen when a unit got a shield for the first time.</li>
+</ul>
+<h2 id="balance-changes">Balance Changes</h2>
+<p>There were also a few balance changes that made it into this patch:</p>
+<h3 id="critter-_the-beast_">Critter <em>The Beast</em></h3>
+<p>The Beast, one of the exciting new units introduced last patch, came out of the gate a bit too strong. With high movement and health and its former primary attack Stomp, it was too much of a better version of the Grump. This change removes Beast&rsquo;s oppressive high-damage, large AOE attack, so Stomp is purely Grump&rsquo;s signature move now. It replaces it with a melee attack that does 3 damage to the enemy, while also dealing 1 damage to itself. This leans more heavily into The Beast&rsquo;s goal of being a self-damaging powerhouse that chooses its own time of explosive death.</p>
+<p><code>Bash: Beast uses its body to bash an enemy, oblivious to the harm it causes to itself. Deals 1 damage to self.</code></p>
+<ul>
+<li><code>Damage 3</code></li>
+<li><code>Range 1</code></li>
+</ul>
+<h3 id="critter-gargoyle">Critter Gargoyle</h3>
+<p>Gargoyle&rsquo;s changes have landed nicely. Gargoyle is now an extremely mobile unit, and can dish out damage as well as healing teammates. However, its heal ability still had a cooldown of 0 &ndash; a remnant of a past where we were trying to compensate for its low overall power level.</p>
+<p><code>Transfusion</code> (healing ability)</p>
+<ul>
+<li><code>Cooldown: 0 -&gt; 1</code></li>
+</ul>
+<h2 id="matchmaking-changes">Matchmaking Changes</h2>
+<p>One change has been made to matchmaking: the server now keeps track of the last 2 people you matched with through Quick Play, and will not match you with them until you match with other people for a couple games. This should greatly reduce the number of times where you click &ldquo;Quick Play&rdquo; a few times and end up with 3 games against the same person.</p>
+<p>It&rsquo;s <em>possible</em> that this will negatively impact match times overall, leading to players having to wait longer for games in general - in that case, we can reduce the number of people the server won&rsquo;t match you with, or roll back this change completely. Let me know if you think this is a problem.</p>
+<h2 id="feedback">Feedback</h2>
+<p>As always, let us know in <a href="https://discord.gg/h5C5wEx">Discord</a> or on <a href="https://twitter.com/barnardsgame/">Twitter</a> what you think!</p>
+
+
+			<div class="post-tags">
+				
+				
+				
+			</div>
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/17a/?ref=footer">« Previous Post: 17a Patch Notes - Beginning of Season 2</a>
+					</div>
+					
+			
+					
+					<div class="footer-link next-post">
+						<a href="https://bstar.app/patch-notes/17d/?ref=footer">Next Post: 17d Patch Notes - Friends system »</a>
+					</div>
+					
+				</div>
+			
+		</div>
+
+	</article>
+</main>
+<div class="container">
+    <footer class="py-3 my-4">
+        <p class="text-center" style="color: rgb(193, 193, 193);">© 2022 Pollywog Games</p>
+    </footer>
+</div>
+
+<script>
+    function updateText() {
+        let delay = 200;
+        let wavyAll = document.querySelectorAll(".wavy");
+
+        for (const wavy of wavyAll) {
+            wavy.innerHTML = wavy.textContent
+                .split("")
+                .map(letter => {
+                    console.log(letter);
+                    return `<span>` + letter + `</span>`;
+                })
+                .join("");
+
+            Array.from(wavy.children).forEach((span, index) => {
+                setTimeout(() => {
+                    span.classList.add("wavy-animated");
+                }, index * 60 + delay);
+            });
+        }
+    }
+
+    updateText();
+</script></div>
+    </body>
+</html>

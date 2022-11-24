@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patch-notes on Barnard&#39;s Star</title>
+    <link>https://bstar.app/patch-notes/</link>
+    <description>Recent content in Patch-notes on Barnard&#39;s Star</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Nov 2022 13:37:00 -0600</lastBuildDate><atom:link href="https://bstar.app/patch-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>17d Patch Notes - Friends system</title>
+      <link>https://bstar.app/patch-notes/17d/</link>
+      <pubDate>Thu, 24 Nov 2022 13:37:00 -0600</pubDate>
+      
+      <guid>https://bstar.app/patch-notes/17d/</guid>
+      <description>This patch adds a new Friends system! Add other players as friends, and invite them to games, directly from the app. It also adds the ability to choose an icon for your profile, and fixes several bugs from previous updates.
+Profile icon Customize your profile by choosing an icon from your badges, and the fighters you&amp;rsquo;ve unlocked:
+Use the pencil icon in the top right of your profile to change which icon is being displayed.</description>
+    </item>
+    
+    <item>
+      <title>17b Patch Notes</title>
+      <link>https://bstar.app/patch-notes/17b/</link>
+      <pubDate>Sun, 09 Oct 2022 14:05:05 -0600</pubDate>
+      
+      <guid>https://bstar.app/patch-notes/17b/</guid>
+      <description>This patch mainly consists of bugfixes relating to changes made in the last patch, 17a (the one that introduced the beginning of season 2). Here&amp;rsquo;s a big ol&amp;rsquo; list of &amp;rsquo;em.
+Bugfixes When an ability shoves a fighter into cover, it didn&amp;rsquo;t deal damage to the cover. Now it does. For the purposes of unlocking Catalyst, &amp;ldquo;electrify&amp;rdquo; wouldn&amp;rsquo;t count as stun. Now it does. Fixed a bug where shooting an acid bubble created a smokescreen tile instead of an acid tile.</description>
+    </item>
+    
+    <item>
+      <title>17a Patch Notes - Beginning of Season 2</title>
+      <link>https://bstar.app/patch-notes/17a/</link>
+      <pubDate>Fri, 19 Aug 2022 11:29:53 -0600</pubDate>
+      
+      <guid>https://bstar.app/patch-notes/17a/</guid>
+      <description>Welcome to version 17a, the very first balance patch since Barnard&amp;rsquo;s Star was launched!
+(Geez, about time, you might be thinking!)
+Due to the way Barnard&amp;rsquo;s Star was designed and coded, the game logic has to stay deterministic in order to be correctly simulated on both client and server. This means that client and server need to be updated in lockstep with each other. But due to the iOS App Store and the Google Play Store requiring a review of each app version before they&amp;rsquo;re released, we don&amp;rsquo;t really have exact control over when updates are released.</description>
+    </item>
+    
+  </channel>
+</rss>
