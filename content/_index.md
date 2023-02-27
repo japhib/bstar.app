@@ -1,5 +1,5 @@
 ---
-title: "Barnard's Star"
+title: "Main Page"
 ---
 
 # Barnard's Star
