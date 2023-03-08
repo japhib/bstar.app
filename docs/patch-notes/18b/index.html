@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+
+    
+    <script defer data-domain="bstar.app" src="https://plausible.io/js/script.js"></script>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+
+    
+    
+    <link rel="stylesheet" href="https://bstar.app/style.css" />
+
+    <meta property="og:title" content="18b Patch Notes - Bugfixes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+
+    <title>Barnard&#39;s Star - 18b Patch Notes - Bugfixes</title>
+</head><body>
+        <div class="container content text-light"><div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+            <span class="fs-4">Barnard&#39;s Star</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://discord.gg/h5C5wEx" class="nav-link">Discord</a></li>
+            <li class="nav-item"><a href="/patch-notes" class="nav-link">Patch Notes</a></li>
+        </ul>
+    </header>
+</div>
+<main>
+	<article>
+		<div class="wide-container padded tertiary-bg p-text-mid">
+
+			<div class="title">
+				<h1 class="text-center post-title">18b Patch Notes - Bugfixes</h1>
+
+				
+
+				
+				<p class="blog-meta">Jan Bergeson (jamp)</p>
+				
+
+				
+				<p class="blog-meta">Mar 8, 2023</p>
+				
+			</div>
+			
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/18a/?ref=footer">« Previous Post: 18a Patch Notes - 3-4 Player Games, and Beginning...</a>
+					</div>
+					
+			
+					
+				</div>
+			
+
+			<hr />
+
+			<div class="table-of-contents">
+				<h3>Contents</h3>
+				<div id="contents">
+					<nav id="TableOfContents">
+  <ul>
+    <li><a href="#bugfixes">Bugfixes</a></li>
+    <li><a href="#gameplay-changes">Gameplay changes</a>
+      <ul>
+        <li><a href="#robot-defragmenter">Robot Defragmenter</a></li>
+        <li><a href="#robot-exterminator">Robot Exterminator</a></li>
+        <li><a href="#robot-physics-engine">Robot Physics Engine</a></li>
+        <li><a href="#acidwater-turning-to-smoke">Acid/Water turning to Smoke</a></li>
+      </ul>
+    </li>
+    <li><a href="#comments">Comments</a></li>
+  </ul>
+</nav>
+				</div>
+			</div>
+
+			<p>This is a minor bugfix update - please <a href="/patch-notes/18a">see the last patch notes for the meaty Season 3 changes</a>!</p>
+<p>Note also that this patch doesn&rsquo;t fix all the known bugs, either. There are several outstanding bugs that will be fixed in a later update.</p>
+<h2 id="bugfixes">Bugfixes</h2>
+<ul>
+<li>Fixed: Some UI graphics looked quite bad due to an increased compression level.</li>
+<li>Fixed: A burrow covered by oil would sometimes render behind the oil, instead of in front of it.</li>
+<li>Fixed: The camera would not move to where a character is unburrowing, even if it happened off-screen.</li>
+<li>Fixed/Changed: The Skill Rating leaderboard was not showing anyone, regardless of how many ranked games they&rsquo;d played. It will now show anyone who has finished at least 1 ranked game.</li>
+<li>Fixed: When you cancel making a local game from the lobby screen, it would error out, causing the game to lock up.</li>
+<li>Fixed: Unable to see when fighters would respawn for 3rd or 4th (green or purple) players in game by selecting their base or one of their fighters.</li>
+<li>Improved: &ldquo;Join Game&rdquo;, &ldquo;Submit Turn&rdquo;, and &ldquo;Surrender&rdquo; actions have been improved on the server-side to run much more quickly.</li>
+<li>Improved: For online games, the turn indicator pop-up now says which player&rsquo;s turn it is (such as &ldquo;Chalcidfly&rsquo;s Turn&rdquo;) rather than just &ldquo;Enemy Turn&rdquo;.</li>
+<li>Improved: The in-game pause menu will now show other player&rsquo;s names in their team color.</li>
+</ul>
+<h2 id="gameplay-changes">Gameplay changes</h2>
+<p>Most balance changes have been deferred to a later, more substantial update. However, there were a few quick changes that were quite fast to make, and unlikely to cause breakage in existing games.</p>
+<h3 id="robot-defragmenter">Robot Defragmenter</h3>
+<p>Thanks to <code>Marzeltine</code> in the Discord for pointing out that the Season 3 nerfs actually left Defragmenter in a weaker state than before his Season 2 buffs. <strong>The change to bring <code>Sketchy Syringe</code>&rsquo;s damage from 3 down to 2 has been reverted</strong>.</p>
+<p>Additionally, there was another change that was not noted in the 18a patch notes:</p>
+<ul>
+<li>When Daemon &amp; Overlord (Robot &amp; Critter summoners) deal themselves 1 damage at the beginning of their summoning ability, this damage will come directly from their health, bypassing any shield they may have.</li>
+</ul>
+<h3 id="robot-exterminator">Robot Exterminator</h3>
+<ul>
+<li>When <code>Taunt</code> is used against enemy abilities (such as Bazooka), it will no longer put that ability on cooldown.</li>
+<li><code>Plasma Sword</code> <strong>will no longer</strong> ignite oil at the same time as hitting a fighter. This could be exploited to deal 5 damage to an enemy fighter with a single ability!
+<ul>
+<li>This change also means other hazards will not be hit if Exterminator is targetting an enemy fighter &ndash; for instance, if he hit an enemy standing on top of water, the water would be simultaneously be turned into smoke.</li>
+<li>When hitting an acid bubble, Plasma Sword will now turn it appropriately into acid, rather than double-hitting it and turning the acid into smoke.</li>
+<li>These changes also apply to <code>Robot Automechanic</code>, who has the same <code>Plasma Sword</code> ability.</li>
+</ul>
+</li>
+</ul>
+<h3 id="robot-physics-engine">Robot Physics Engine</h3>
+<p>Physics Engine&rsquo;s main attack, <code>Forklift</code>, can now target friendly fighters! It won&rsquo;t deal any damage, just push them. This can now be used to unlock the <code>Omnibus</code> unlock condition of pushing a fighter onto a teleporter.</p>
+<h3 id="acidwater-turning-to-smoke">Acid/Water turning to Smoke</h3>
+<p>Up until last patch, there was a relatively unknown rule in the game that said that if you create <code>fire</code> next to <code>acid</code> or <code>water</code>, the acid or water would turn into <code>smoke screen</code>:</p>
+<p><img src="/img/18b/fire.gif" alt="fire"></p>
+<p>Last patch, in an effort to simplify the game a bit, I removed that rule. However, I didn&rsquo;t realize that it was actually useful to some people! So, as of this patch <code>18b</code>, <strong>it has been added back into the game.</strong></p>
+<p><strong>TL;DR</strong> Going forward, fire placed next to acid or water will cause it to boil into steam, or rather <code>smoke screen</code>, once again.</p>
+<h2 id="comments">Comments</h2>
+<p>Now testing out comments! It requires logging in via <a href="https://github.com/signup">a free Github account</a>. Check it out! 👇</p>
+
+
+			<div class="post-tags">
+				
+				
+				
+			</div>
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/18a/?ref=footer">« Previous Post: 18a Patch Notes - 3-4 Player Games, and Beginning...</a>
+					</div>
+					
+			
+					
+				</div>
+				<hr />
+			
+		</div>
+
+	</article>
+</main>
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="japhib/bstar.app"
+        data-repo-id="R_kgDOH2SgyQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOH2Sgyc4CUvih"
+        data-mapping="og:title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <p class="text-center" style="color: rgb(193, 193, 193);">© 2022 Pollywog Games</p>
+    </footer>
+</div>
+
+<script>
+    function updateText() {
+        let delay = 200;
+        let wavyAll = document.querySelectorAll(".wavy");
+
+        for (const wavy of wavyAll) {
+            wavy.innerHTML = wavy.textContent
+                .split("")
+                .map(letter => {
+                    console.log(letter);
+                    return `<span>` + letter + `</span>`;
+                })
+                .join("");
+
+            Array.from(wavy.children).forEach((span, index) => {
+                setTimeout(() => {
+                    span.classList.add("wavy-animated");
+                }, index * 60 + delay);
+            });
+        }
+    }
+
+    updateText();
+</script></div>
+    </body>
+</html>
