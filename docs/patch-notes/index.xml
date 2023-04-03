@@ -6,7 +6,17 @@
     <description>Recent content in Patch-notes on Barnard&#39;s Star</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Mar 2023 12:00:00 -0600</lastBuildDate><atom:link href="https://bstar.app/patch-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 12:00:00 -0600</lastBuildDate><atom:link href="https://bstar.app/patch-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>18c Patch Notes - Balance Changes &amp; Bugfixes</title>
+      <link>https://bstar.app/patch-notes/18c/</link>
+      <pubDate>Mon, 03 Apr 2023 12:00:00 -0600</pubDate>
+      
+      <guid>https://bstar.app/patch-notes/18c/</guid>
+      <description>Another small update - but some big balance changes coming in!
+Balance Changes Lurker and newly updated Acid Junkie have enjoyed a month of considerable influence. In general, the crazy plays Lurker&amp;rsquo;s Burrow and Junkie&amp;rsquo;s Acid Dash enable are so powerful as to be meta-altering &amp;ndash; that is, they&amp;rsquo;re so strong, any team not including them is at a disadvantage. After discussion in Discord, I&amp;rsquo;ve opted for some strong nerfs. These should preserve their gameplay identity and allow interesting plays, while removing the most problematic combos</description>
+    </item>
+    
     <item>
       <title>18b Patch Notes - Bugfixes</title>
       <link>https://bstar.app/patch-notes/18b/</link>

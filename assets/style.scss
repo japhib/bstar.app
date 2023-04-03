@@ -119,6 +119,12 @@ div>ul>li {
   color: transparent;
 }
 
+.grayscale {
+  background-image: linear-gradient(to left, white, rgb(200, 200, 200), rgb(125, 125, 125), rgb(80, 80, 80), rgb(125, 125, 125), rgb(200, 200, 200), rgb(255, 255, 255));
+  background-clip: text;
+  color: transparent;
+}
+
 .wavy-animated {
   animation-name: wavy;
   animation-duration: 0.5s;

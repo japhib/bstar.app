@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+
+    
+    <script defer data-domain="bstar.app" src="https://plausible.io/js/script.js"></script>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+
+    
+    
+    <link rel="stylesheet" href="https://bstar.app/style.css" />
+
+    <meta property="og:title" content="18c Patch Notes - Balance Changes &amp; Bugfixes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+
+    <title>Barnard&#39;s Star - 18c Patch Notes - Balance Changes &amp; Bugfixes</title>
+</head><body>
+        <div class="container content text-light"><div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+            <span class="fs-4">Barnard&#39;s Star</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://discord.gg/h5C5wEx" class="nav-link">Discord</a></li>
+            <li class="nav-item"><a href="/patch-notes" class="nav-link">Patch Notes</a></li>
+        </ul>
+    </header>
+</div>
+<main>
+	<article>
+		<div class="wide-container padded tertiary-bg p-text-mid">
+
+			<div class="title">
+				<h1 class="text-center post-title">18c Patch Notes - Balance Changes &amp; Bugfixes</h1>
+
+				
+
+				
+				<p class="blog-meta">Jan Bergeson (jamp)</p>
+				
+
+				
+				<p class="blog-meta">Apr 3, 2023</p>
+				
+			</div>
+			
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/18b/?ref=footer">« Previous Post: 18b Patch Notes - Bugfixes</a>
+					</div>
+					
+			
+					
+				</div>
+			
+
+			<hr />
+
+			<div class="table-of-contents">
+				<h3>Contents</h3>
+				<div id="contents">
+					<nav id="TableOfContents">
+  <ul>
+    <li><a href="#balance-changes">Balance Changes</a>
+      <ul>
+        <li><a href="#lurker">Lurker</a></li>
+        <li><a href="#acid-junkie">Acid Junkie</a></li>
+      </ul>
+    </li>
+    <li><a href="#transit-map-adjustments">Transit map adjustments</a></li>
+    <li><a href="#bugfixes">Bugfixes</a></li>
+    <li><a href="#tentative-roadmap">Tentative roadmap</a></li>
+  </ul>
+</nav>
+				</div>
+			</div>
+
+			<p>Another small update - but some big balance changes coming in!</p>
+<h2 id="balance-changes">Balance Changes</h2>
+<p>Lurker and newly updated Acid Junkie have enjoyed a month of considerable influence. In general, the crazy plays Lurker&rsquo;s Burrow and Junkie&rsquo;s Acid Dash enable are so powerful as to be meta-altering &ndash; that is, they&rsquo;re so strong, any team not including them is at a disadvantage. After discussion in Discord, I&rsquo;ve opted for some strong nerfs. These should preserve their gameplay identity and allow interesting plays, while removing the most problematic combos</p>
+<h3 id="lurker">Lurker</h3>
+<p>Lurker&rsquo;s <code>Burrows</code> now cannot be used when there is another fighter standing on the other end. Note that this prevents their use on the first turn of their creation.</p>
+<ul>
+<li>This prevents epic plays where you &ldquo;burrow&rdquo; your entire team halfway across the map, with no setup. It&rsquo;s still possible to burrow your team halfway across the map, but now enemies will have at least 1 turn&rsquo;s worth of warning, allowing them to position accordingly, or attempt to destroy the burrow.</li>
+</ul>
+<h3 id="acid-junkie">Acid Junkie</h3>
+<p>Acid Junkie&rsquo;s primary attack has been changed from <code>Acid Punch</code> (3 damage, in most cases) to <code>Unarmed</code> (2 damage).</p>
+<ul>
+<li>This removes the combo where AJ can dash into a group of full-health people and kill <em>all</em> of them, provided his initial dash gets him a kill reset. In that case, he&rsquo;ll still be able to do a lot of damage, but it won&rsquo;t be the crazy game-ending move it is now.</li>
+</ul>
+<h2 id="transit-map-adjustments">Transit map adjustments</h2>
+<p>The &ldquo;Transit&rdquo; map has been adjusted so that the north-south bases are not so close to the center of the map. The map is now symmetrical both horizontally and vertically. Teleporters have also been moved. Here&rsquo;s what it looks like now:</p>
+<p><img src="/img/18c/transit-after.png" alt="transit map after changes"></p>
+<p>No new maps with this update, but I hope to create some more soon!</p>
+<h2 id="bugfixes">Bugfixes</h2>
+<p>Lots of bugs have been squashed!</p>
+<ul>
+<li>Hook/Kinesis not triggering Omnibus unlock</li>
+<li>Cross Gaps 5 Times not being triggered by certain abilities</li>
+<li>When a player is eliminated, the next time you load the map, it should still show the blast mark where that player was</li>
+<li>Unable to choose fighters after closing/opening choose team menu (clicking &ldquo;view map&rdquo; and then &ldquo;choose team&rdquo;)</li>
+<li>Chosen map doesn&rsquo;t display correctly in game lobby &ldquo;view game settings&rdquo;</li>
+<li>Immediate &ldquo;your opponent has taken their turn!&rdquo; after submitting your turn</li>
+<li>Eliminated notification after surrendering</li>
+<li>Healthbars for fighter mini portraits (on top of screen) showing damage for fighters on other teams</li>
+<li>Automechanic&rsquo;s healing ability doesn&rsquo;t have an animation for himself when he isn&rsquo;t in oil</li>
+</ul>
+<p>Thanks to everyone who reported these bugs!</p>
+<h2 id="tentative-roadmap">Tentative roadmap</h2>
+<p>There are more big updates on the horizon &ndash; 3-4 player games was only the start! I&rsquo;d like to share a tentative roadmap for upcoming updates. Keep in mind that this is not set in stone, and dev plans can change unexpectedly, with updates coming in out of order or being scrapped entirely.</p>
+<p>Last note &ndash; please keep in mind that Barnard&rsquo;s Star is a mostly-solo, part-time project for me! I have a full-time job as well as a family, so I can&rsquo;t spend as much time on development as a &ldquo;real&rdquo; gamedev team could. That means the pace of development is largely subject to the amount of free time I have in a given week or month, which can vary widely. Thank you for your patience!</p>
+<blockquote>
+<p>On the plus side, it also means that Lincoln [who helped me set up the backend servers but has largely moved on from the project since then] and I have made sure to set up the project to have the smallest server-side cost possible. Even if Barnard&rsquo;s Star were never to make another penny, we have enough money to keep the servers running for decades! Take that, every other profit-driven service based game.</p>
+</blockquote>
+<p>Here&rsquo;s the short-to-medium-term roadmap!</p>
+<ol>
+<li>4-player updates
+<ul>
+<li>Server updates for performance, especially for long games</li>
+<li>More maps for 4-player games (goal is ~9 total)</li>
+<li>Teams mode w/ associated mutations</li>
+<li>More mutations for all game modes</li>
+</ul>
+</li>
+<li>6-player games!
+<ul>
+<li>2 new team colors</li>
+<li>new maps</li>
+<li>3v3 game mode!</li>
+</ul>
+</li>
+<li>IAPs!!!
+<ul>
+<li>Custom icons</li>
+<li>Custom team colors, e.g. <span class="rainbow wavy">rainbow</span>, <span class="grayscale wavy">grayscale</span></li>
+</ul>
+</li>
+<li>Single-player content
+<ul>
+<li>10+ missions per faction (<em>very</em> light on story, likely won&rsquo;t be much more than glorified Skirmish vs. AI)</li>
+<li>Leaderboards</li>
+</ul>
+</li>
+<li>Free-to-play update!!!!
+<ul>
+<li>Humans in all game modes free</li>
+<li>Add IAPs for unlocking robots/critters</li>
+<li>All existing players get robots/critters for free, a &ldquo;Founder&rdquo; badge, as well as any future paid features (such as map editor)</li>
+</ul>
+</li>
+</ol>
+<p>And the long-term roadmap (pretty far in the future and may or may not eventually happen):</p>
+<ul>
+<li>Map editor</li>
+<li>Roguelike mode</li>
+<li>Localization</li>
+<li>Real-time games</li>
+<li>Automated tournaments</li>
+</ul>
+<hr>
+<p>As always, feedback is most welcome! Please leave comments below or discuss on Discord. Thanks, and see you next time!</p>
+
+
+			<div class="post-tags">
+				
+				
+				
+			</div>
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/18b/?ref=footer">« Previous Post: 18b Patch Notes - Bugfixes</a>
+					</div>
+					
+			
+					
+				</div>
+				<hr />
+			
+		</div>
+
+	</article>
+</main>
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="japhib/bstar.app"
+        data-repo-id="R_kgDOH2SgyQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOH2Sgyc4CUvih"
+        data-mapping="og:title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <p class="text-center" style="color: rgb(193, 193, 193);">© 2022 Pollywog Games</p>
+    </footer>
+</div>
+
+<script>
+    function updateText() {
+        let delay = 200;
+        let wavyAll = document.querySelectorAll(".wavy");
+
+        for (const wavy of wavyAll) {
+            wavy.innerHTML = wavy.textContent
+                .split("")
+                .map(letter => {
+                    console.log(letter);
+                    return `<span>` + letter + `</span>`;
+                })
+                .join("");
+
+            Array.from(wavy.children).forEach((span, index) => {
+                setTimeout(() => {
+                    span.classList.add("wavy-animated");
+                }, index * 60 + delay);
+            });
+        }
+    }
+
+    updateText();
+</script></div>
+    </body>
+</html>
