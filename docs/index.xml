@@ -14,7 +14,8 @@
       
       <guid>https://bstar.app/patch-notes/18c/</guid>
       <description>Another small update - but some big balance changes coming in!
-Balance Changes Lurker and newly updated Acid Junkie have enjoyed a month of considerable influence. In general, the crazy plays Lurker&amp;rsquo;s Burrow and Junkie&amp;rsquo;s Acid Dash enable are so powerful as to be meta-altering &amp;ndash; that is, they&amp;rsquo;re so strong, any team not including them is at a disadvantage. After discussion in Discord, I&amp;rsquo;ve opted for some strong nerfs. These should preserve their gameplay identity and allow interesting plays, while removing the most problematic combos</description>
+18d Hotfixes Version 18d is a small hotfix update, released 4/12/2023.
+Fixed: Grey cone squares on Transit map are no longer walkable. Fixed: Automechanics&amp;rsquo; Oil Change ability now properly heals teammates. Fixed: Replay issues when waiting for an opponent to take a turn in real-time. Improved: Several server-side optimizations to improve speed of operations involving long-running games with many turns.</description>
     </item>
     
     <item>
