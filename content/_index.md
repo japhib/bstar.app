@@ -6,4 +6,4 @@ title: "Main Page"
 
 A new multiplayer game from Pollywog Games.
 
-This site is under construction!
+👷 This site is under construction! 👷

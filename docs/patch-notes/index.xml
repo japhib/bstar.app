@@ -6,7 +6,17 @@
     <description>Recent content in Patch-notes on Barnard&#39;s Star</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Apr 2023 12:00:00 -0600</lastBuildDate><atom:link href="https://bstar.app/patch-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jun 2023 10:00:00 -0600</lastBuildDate><atom:link href="https://bstar.app/patch-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>18e Patch Notes - Teams &amp; Balance Changes</title>
+      <link>https://bstar.app/patch-notes/18e/</link>
+      <pubDate>Mon, 12 Jun 2023 10:00:00 -0600</pubDate>
+      
+      <guid>https://bstar.app/patch-notes/18e/</guid>
+      <description>Teams! Since 4-player games were released, players (myself included) have been faking team games in Free-For-Alls. However, this comes with its own set of problems &amp;ndash; you can still kill your teammates&amp;rsquo; fighters, you can&amp;rsquo;t walk through them like you can with your own fighters, and worst of all, when you vanquish the other team, which one of you will surrender??
+Anyways, this update includes support for actual team games! The new option for selecting a team game is shown below:</description>
+    </item>
+    
     <item>
       <title>18c Patch Notes - Balance Changes &amp; Bugfixes</title>
       <link>https://bstar.app/patch-notes/18c/</link>
