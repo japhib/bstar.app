@@ -6,7 +6,18 @@
     <description>Recent content in Main Page on Barnard&#39;s Star</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Apr 2023 12:00:00 -0600</lastBuildDate><atom:link href="https://bstar.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Oct 2023 12:00:00 -0600</lastBuildDate><atom:link href="https://bstar.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>19a Patch Notes - Tons of balance changes &amp; fixes</title>
+      <link>https://bstar.app/patch-notes/19a/</link>
+      <pubDate>Wed, 25 Oct 2023 12:00:00 -0600</pubDate>
+      
+      <guid>https://bstar.app/patch-notes/19a/</guid>
+      <description>This update has been a long time coming &amp;ndash; thanks for your patience!
+Part of the reason this update took so long is that I&amp;rsquo;ve been working on adding some new systems behind the scenes in preparation for the upcoming single-player roguelike mode. That mode is not available yet, but will be soon!
+Balance Changes Regeneration - Human Commando and Critter Grump This ability is a centerpiece of Commando&amp;rsquo;s and Grump&amp;rsquo;s identities as damage-soaking frontline units.</description>
+    </item>
+    
     <item>
       <title>18c Patch Notes - Balance Changes &amp; Bugfixes</title>
       <link>https://bstar.app/patch-notes/18c/</link>

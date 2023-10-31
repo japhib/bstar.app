@@ -12,6 +12,16 @@ body {
   cursor: pointer;
 }
 
+.discord-cta {
+  color: #98b5ff;
+
+  a {
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+  }
+}
+
 .draft-label {
   color: rgb(145, 61, 205);
 }
@@ -37,6 +47,9 @@ blockquote {
 }
 
 code {
+  color: #ff89c6;
+}
+pre code {
   color: #ff89c6;
 }
 

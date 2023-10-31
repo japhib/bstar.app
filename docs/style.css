@@ -5,6 +5,13 @@ body {
   color: #98b5ff;
   cursor: pointer; }
 
+.discord-cta {
+  color: #98b5ff; }
+  .discord-cta a {
+    display: block;
+    width: fit-content;
+    margin: 40px auto; }
+
 .draft-label {
   color: #913dcd; }
 
@@ -25,6 +32,9 @@ blockquote {
     margin-bottom: 0; }
 
 code {
+  color: #ff89c6; }
+
+pre code {
   color: #ff89c6; }
 
 .table-of-contents {

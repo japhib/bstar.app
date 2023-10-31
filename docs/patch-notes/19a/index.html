@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+
+    
+    <script defer data-domain="bstar.app" src="https://plausible.io/js/script.js"></script>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+
+    
+    
+    <link rel="stylesheet" href="https://bstar.app/style.css" />
+
+    <meta property="og:title" content="19a Patch Notes - Tons of balance changes &amp; fixes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+
+    <title>Barnard&#39;s Star - 19a Patch Notes - Tons of balance changes &amp; fixes</title>
+</head><body>
+        <div class="container content text-light"><div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+            <span class="fs-4">Barnard&#39;s Star</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://discord.gg/h5C5wEx" class="nav-link">Discord</a></li>
+            <li class="nav-item"><a href="/patch-notes" class="nav-link">Patch Notes</a></li>
+        </ul>
+    </header>
+</div>
+<main>
+	<article>
+		<div class="wide-container padded tertiary-bg p-text-mid">
+
+			<div class="title">
+				<h1 class="text-center post-title">19a Patch Notes - Tons of balance changes &amp; fixes</h1>
+
+				
+
+				
+				<p class="blog-meta">Jan Bergeson (jamp)</p>
+				
+
+				
+				<p class="blog-meta">Oct 25, 2023</p>
+				
+			</div>
+			
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/18c/?ref=footer">« Previous Post: 18c Patch Notes - Balance Changes &amp; Bugfixes</a>
+					</div>
+					
+			
+					
+				</div>
+			
+
+			<hr />
+
+			<div class="table-of-contents">
+				<h3>Contents</h3>
+				<div id="contents">
+					<nav id="TableOfContents">
+  <ul>
+    <li><a href="#balance-changes">Balance Changes</a>
+      <ul>
+        <li><a href="#regeneration---human-commando-and-critter-grump">Regeneration - Human Commando and Critter Grump</a></li>
+        <li><a href="#human-amphibian">Human Amphibian</a></li>
+        <li><a href="#human-mad-scientist">Human Mad Scientist</a></li>
+        <li><a href="#human-punk">Human Punk</a></li>
+        <li><a href="#robot-exterminator">Robot Exterminator</a></li>
+        <li><a href="#robot-physics-engine">Robot Physics Engine</a></li>
+        <li><a href="#robot-catalyst">Robot Catalyst</a></li>
+        <li><a href="#robot-omnibus">Robot Omnibus</a></li>
+        <li><a href="#critter-bounty-hunter">Critter Bounty Hunter</a></li>
+        <li><a href="#critter-blobber">Critter Blobber</a></li>
+      </ul>
+    </li>
+    <li><a href="#system-changes">System Changes</a>
+      <ul>
+        <li><a href="#new-mutations">New Mutations</a></li>
+        <li><a href="#new-ranked-format">New Ranked Format</a></li>
+      </ul>
+    </li>
+    <li><a href="#miscellaneous-improvements">Miscellaneous Improvements</a></li>
+    <li><a href="#other-fixes">Other fixes</a></li>
+  </ul>
+</nav>
+				</div>
+			</div>
+
+			<p>This update has been a long time coming &ndash; thanks for your patience!</p>
+<blockquote>
+<p>Part of the reason this update took so long is that I&rsquo;ve been working on adding some new systems behind the scenes in preparation for the upcoming single-player roguelike mode. That mode is not available yet, but will be soon!</p>
+</blockquote>
+<h2 id="balance-changes">Balance Changes</h2>
+<h3 id="regeneration---human-commando-and-critter-grump">Regeneration - Human Commando and Critter Grump</h3>
+<p>This ability is a centerpiece of Commando&rsquo;s and Grump&rsquo;s identities as damage-soaking frontline units. With <strong>Regeneration</strong> as a passive ability, these units heal at the beginning of every single turn, regardless of whether or not they used a full action on the previous turn. This patch, it became obvious that it&rsquo;s a little too easy for these units to be useful soaking up damage, and still be really hard to kill. So we&rsquo;re changing the ability to be an active ability, rather than a passive one. Additionally, since it now has a cooldown, we&rsquo;re giving it an additional point of healing when activated. This will force players to be a bit more strategic about when to activate the ability.</p>
+<ul>
+<li><code>Passive -&gt; Active</code> (only targets self)</li>
+<li><code>Cooldown: 0 -&gt; 1</code></li>
+</ul>
+<h3 id="human-amphibian">Human Amphibian</h3>
+<p>Amphibian has struggled a little to find an identity within the meta, and this patch she&rsquo;s getting a bit of a rework to strengthen her identity as a frontliner.</p>
+<ul>
+<li><code>Health: 5 -&gt; 6</code></li>
+<li><code>Weapon: Sidearm -&gt; Revolver</code></li>
+</ul>
+<p>New weapon: <strong>Revolver</strong></p>
+<ul>
+<li>Range: 2</li>
+<li>Damage: 2</li>
+<li>Shoots both in orthogonal and diagonal directions</li>
+</ul>
+<h3 id="human-mad-scientist">Human Mad Scientist</h3>
+<p>The range of <strong>Water Grenade</strong> is currently a <em>bit</em> ridiculous, taking into consideration the fact that it creates a cross of water, meaning the effective range is actually one longer. This change pulls it back to something slightly more reasonable.</p>
+<ul>
+<li><code>Water Grenade Range: 5 -&gt; 4</code></li>
+</ul>
+<h3 id="human-punk">Human Punk</h3>
+<p>There are a lot of units in the game with a <strong>Shotgun</strong>, and having the same weapon as <strong>Ranger</strong> makes <strong>Punk</strong> play very similarly. We&rsquo;re giving her a different weapon to help make her feel distinct to play.</p>
+<ul>
+<li><code>Punk Weapon: Shotgun -&gt; Machine Gun</code></li>
+</ul>
+<h3 id="robot-exterminator">Robot Exterminator</h3>
+<p>The <strong>Taunt</strong> ability has been pretty well received since its recent introduction to the game. The thing that makes it painful to use is that you lose your <strong>Reflect Projectiles</strong> buff, which feels bad. That is being changed with this update. <strong>Taunt</strong> will still <em>not</em> reflect anything if the <strong>Reflect Projectiles</strong> buff is not active, but if it is active, it won&rsquo;t be lost.</p>
+<ul>
+<li><code>Taunt new effect: If Exterminator has Reflect Projectiles active, it will not be consumed.</code></li>
+</ul>
+<h3 id="robot-physics-engine">Robot Physics Engine</h3>
+<p>In general, units with secondary abilities are more interesting and enjoyable to play than those without. We&rsquo;re attempting to give each unit a secondary ability, if they don&rsquo;t already. For Physics Engine, another ability to damage cover seemed appropriate.</p>
+<ul>
+<li><code>New ability:</code> <strong><code>Seismic Pulse</code></strong></li>
+</ul>
+<pre tabindex="0"><code>Cooldown: 1
+Range: 1
+Physics Engine unleashes a pulse of seismic energy, damaging cover in surrounding squares. Deals no damage to units.
+Targets self only.
+</code></pre><h3 id="robot-catalyst">Robot Catalyst</h3>
+<p>Since its release, Catalyst has pretty consistently been one of the weakest and least-chosen units in the game. Giving him some extra power in both abilities should make him more interesting to play with, and hopefully more viable in various team compositions as well.</p>
+<p><strong><code>Inertial Spark</code></strong> (the movement buff ability)</p>
+<ul>
+<li><code>Range: 2 -&gt; 3</code></li>
+<li>Fixed: can now target units on allied teams</li>
+</ul>
+<p><strong><code>Stasis</code></strong></p>
+<ul>
+<li><code>Range: 3 -&gt; 4</code></li>
+<li><code>Changed: no longer gives shield. Instead, deals 2 damage. Also deals 2 damage to adjacent enemies, in a line perpendicular to cast direction.</code></li>
+</ul>
+<p>If that last bit is confusing, here&rsquo;s a visual:</p>
+<p><img src="/img/19a/stasis.png" alt="new stasis targeting"></p>
+<p>The catalyst on the left is targeting the Gunslinger on the right with Stasis.</p>
+<ul>
+<li>Notably, Stasis can hit enemies even when they&rsquo;re standing behind cover</li>
+<li>The immediate target, Gunslinger, is both damaged <em>and</em> stunned</li>
+<li>The two adjacent enemies in the perpendicular directions (up and down) are also damaged, but <em>not</em> stunned</li>
+<li>Bounty Hunter, standing behind Gunslinger, is not affected</li>
+</ul>
+<h3 id="robot-omnibus">Robot Omnibus</h3>
+<p>The three movement-oriented units, Architect, Lurker, and Omnibus, have been perhaps the most impactful since their release than any other set of new units added to the game since launch. Architect and Lurker have already been the subject of multiple tweaks in the last few patches, trying to get their abilities at the appropriate power level where they can be impactful but not feel unfair to play against. Now it&rsquo;s Omnibus&rsquo;s turn!</p>
+<p><strong><code>Place Teleporter</code></strong></p>
+<ul>
+<li><code>Changed: When you place the second teleporter, the first will disappear at the end of the turn.</code></li>
+<li><code>New: teleporters placed by this ability can now be destroyed by one hit from most primary attacks.</code></li>
+</ul>
+<p>After quite a bit of discussion with players, we decided that the fundamental problem that gave this ability an unfair advantage was that once placed, teleporters cannot be destroyed, and they stay in the same spot for the rest of the game. The most common strategy is to just place one end of the teleporter in your spawn, and the other end next to the nearest other teleporter on the map, and then boom, for the rest of the game you have instant access to that teleporter when you respawn. Hopefully this change will encourage more strategic thinking about where to place teleporters.</p>
+<h3 id="critter-bounty-hunter">Critter Bounty Hunter</h3>
+<p>Bounty Hunter is another unit without a secondary ability. We&rsquo;re giving him a new ability that may be a bit niche, but seemed to fit well with his kit.</p>
+<p><strong><code>Smoke Shroud</code></strong></p>
+<pre tabindex="0"><code>Cooldown: 1
+Range: 0
+Bounty Hunter uses a miniature smoke grenade to create a smoke screen on just their square.
+Targets self only.
+</code></pre><h3 id="critter-blobber">Critter Blobber</h3>
+<p><strong>Acid Bomb</strong> was recently nerfed from range 4 to 3. This was done mainly because it felt like the unit was just slightly overpowered. However, it quickly became apparent that Blobber was much less fun to play with this way. The nerf is being reverted this patch.</p>
+<ul>
+<li><code>Acid Bomb: Range 3 -&gt; 4</code></li>
+</ul>
+<h2 id="system-changes">System Changes</h2>
+<h3 id="new-mutations">New Mutations</h3>
+<p>A few new mutations have been added:</p>
+<ul>
+<li><code>Pre-Choose Units</code> - All players must choose their units before the game can start.</li>
+<li><code>Starting Respawn Timer</code> - Change how many turns it takes units to respawn the first time they die (default 0).</li>
+<li><code>Max Respawn Timer</code> - Change the maximum amount of turns it takes units to respawn, after dying several times (default 2).</li>
+</ul>
+<p>Note: enabling the <code>Pre-Choose Units</code> mutation for a local game with AI players will allow you to choose the AI&rsquo;s units for them!</p>
+<h3 id="new-ranked-format">New Ranked Format</h3>
+<p>Ranked mode has been tweaked once again! In a previous update, Ranked games were changed to have the mutation <code>Base Health: 15</code> (from the default 10). This was an interesting experiment, since it led to longer games and, as you might expect, more frequent comebacks (since the player that is behind has more time to catch up).</p>
+<p>Now that the <code>Pre-Choose Units</code> mutation has been added, it seemed like a good time to mess with the Ranked format yet again. This time, base health in ranked games will be set back down to 10, but <code>Pre-Choose Units</code> will be enabled! Note that this is a blind pick, so both players will pick their teams without having any information about what their opponent has picked. You <em>will</em> be able to see which map the game will be on (if you tap &ldquo;Game Settings&rdquo; before picking). Overall I expect this change to result in fewer counterpicks, and hopefully more interesting team compositions (since you don&rsquo;t have to worry about getting counterpicked).</p>
+<h2 id="miscellaneous-improvements">Miscellaneous Improvements</h2>
+<p>Filters have been added to the TV screen so you can browse replays by game type (ranked, public, or either), number of players (2, 3, 4, or any), and exclude timeouts if desired.</p>
+<p><img src="/img/19a/tv-filter.png" alt="tv-filter"></p>
+<p>On player profiles you can now view the number of games they&rsquo;ve played per faction!</p>
+<p><img src="/img/19a/profile.png" alt="profile"></p>
+<p>There&rsquo;s also a leaderboard for the total number of online games people have played as each faction.</p>
+<p><img src="/img/19a/leaderboard.png" alt="leaderboard"></p>
+<h2 id="other-fixes">Other fixes</h2>
+<ul>
+<li>You now have the ability to undo a move if it lost you the game!</li>
+<li>Replays (both in-game and when watching TV games) have been improved to be more robust. The game will now automatically check for errors during the replay, and if there are any errors detected, it&rsquo;ll reload the game state at the end of the next replayed turn</li>
+<li>Fixed a bug where fast-forwarding through turns when watching a TV game would simply stop working</li>
+<li>Gameplay Help and many tooltips have been re-written for clarity. Big thanks to <code>@Marzeltine</code> in the Discord for help with this!</li>
+<li>Fixed Buster Shot not getting properly reflected by Reflect Projectiles</li>
+<li>Destroying the enemy base now resets the damaging unit&rsquo;s actions &amp; moves, as if they got a kill</li>
+<li>Bazooka can no longer target tiles with nothing but water in them</li>
+<li>Reloading a multiplayer game with &ldquo;Random Units&rdquo; mutation enabled won&rsquo;t reroll your units</li>
+<li>Fixed an issue where selecting the same unit multiple times would fill the UI with many copies of their status effect icons</li>
+<li>Fixed game settings screen showing &ldquo;Free For All&rdquo; option being selected even for team games</li>
+<li>Fixed issues preventing units from avoiding squares where they would get hit by a Ready Attack</li>
+<li>Fixed Lurker being able to occupy the same space as a friendly unit by attacking the enemy base</li>
+</ul>
+
+
+			<div class="post-tags">
+				
+				
+				
+			</div>
+
+			<hr />
+
+			<div class="discord-cta">
+				<a href="https://discord.gg/h5C5wEx">Discuss on Discord</a>
+			</div>
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/18c/?ref=footer">« Previous Post: 18c Patch Notes - Balance Changes &amp; Bugfixes</a>
+					</div>
+					
+			
+					
+				</div>
+				<hr />
+			
+		</div>
+
+	</article>
+</main>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <p class="text-center" style="color: rgb(193, 193, 193);">© 2022 Pollywog Games</p>
+    </footer>
+</div>
+
+<script>
+    function updateText() {
+        let delay = 200;
+        let wavyAll = document.querySelectorAll(".wavy");
+
+        for (const wavy of wavyAll) {
+            wavy.innerHTML = wavy.textContent
+                .split("")
+                .map(letter => {
+                    console.log(letter);
+                    return `<span>` + letter + `</span>`;
+                })
+                .join("");
+
+            Array.from(wavy.children).forEach((span, index) => {
+                setTimeout(() => {
+                    span.classList.add("wavy-animated");
+                }, index * 60 + delay);
+            });
+        }
+    }
+
+    updateText();
+</script></div>
+    </body>
+</html>
