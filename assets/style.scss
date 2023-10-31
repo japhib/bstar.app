@@ -121,6 +121,11 @@ img {
   @include centered;
 }
 
+.centered {
+  @include centered;
+  width: fit-content;
+}
+
 // Direct child of div so that nested bullet lists still have no margin
 div>ul>li {
   margin: .45em 0;

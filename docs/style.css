@@ -91,6 +91,11 @@ img {
   display: block;
   margin: 0px auto; }
 
+.centered {
+  display: block;
+  margin: 0px auto;
+  width: fit-content; }
+
 div > ul > li {
   margin: .45em 0; }
 

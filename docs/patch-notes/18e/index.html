@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+
+    
+    <script defer data-domain="bstar.app" src="https://plausible.io/js/script.js"></script>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+
+    
+    
+    <link rel="stylesheet" href="https://bstar.app/style.css" />
+
+    <meta property="og:title" content="18e Patch Notes - Teams &amp; Balance Changes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+
+    <title>Barnard&#39;s Star - 18e Patch Notes - Teams &amp; Balance Changes</title>
+</head><body>
+        <div class="container content text-light"><div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+            <span class="fs-4">Barnard&#39;s Star</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://discord.gg/h5C5wEx" class="nav-link">Discord</a></li>
+            <li class="nav-item"><a href="/patch-notes" class="nav-link">Patch Notes</a></li>
+        </ul>
+    </header>
+</div>
+<main>
+	<article>
+		<div class="wide-container padded tertiary-bg p-text-mid">
+
+			<div class="title">
+				<h1 class="text-center post-title">18e Patch Notes - Teams &amp; Balance Changes</h1>
+
+				
+
+				
+				<p class="blog-meta">Jan Bergeson (jamp)</p>
+				
+
+				
+				<p class="blog-meta">Jun 12, 2023</p>
+				
+			</div>
+			
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/18c/?ref=footer">« Previous Post: 18c Patch Notes - Balance Changes &amp; Bugfixes</a>
+					</div>
+					
+			
+					
+				</div>
+			
+
+			<hr />
+
+			<div class="table-of-contents">
+				<h3>Contents</h3>
+				<div id="contents">
+					<nav id="TableOfContents">
+  <ul>
+    <li><a href="#teams">Teams!</a></li>
+    <li><a href="#new-maps">New Maps</a></li>
+    <li><a href="#balance-changes">Balance Changes</a>
+      <ul>
+        <li><a href="#human-architect">Human Architect</a></li>
+        <li><a href="#robot-omnibus">Robot Omnibus</a></li>
+        <li><a href="#critter-lurker">Critter Lurker</a></li>
+        <li><a href="#human-ranger">Human Ranger</a></li>
+      </ul>
+    </li>
+    <li><a href="#other-bugfixes">Other Bugfixes</a></li>
+  </ul>
+</nav>
+				</div>
+			</div>
+
+			<h2 id="teams">Teams!</h2>
+<p>Since 4-player games were released, players (myself included) have been faking team games in Free-For-Alls. However, this comes with its own set of problems &ndash; you can still kill your teammates&rsquo; fighters, you can&rsquo;t walk through them like you can with your own fighters, and worst of all, when you vanquish the other team, which one of you will surrender??</p>
+<p>Anyways, this update includes support for actual team games! The new option for selecting a team game is shown below:</p>
+<div class="smallish-img">
+<p><img src="/img/18e/new-game-teams.png" alt="new game teams mode"></p>
+</div>
+<p>Only mostly &ldquo;fair&rdquo; teams are supported for now &ndash; i.e. 2v1 or 2v2, not 1v3. Fighters on the same team will have similar-but-not-the-same team colors, shown below:</p>
+<p><img src="/img/18e/team-fighters.png" alt="team colors"></p>
+<blockquote>
+<p>There are 3 colors for each team (blue/red) in anticipation of 6-player/3v3 team games, coming soon!</p>
+</blockquote>
+<p>Use the new &ldquo;Edit Player Order&rdquo; button to change the order of the players in the lobby. This will also change which team the players are on.</p>
+<p><video autoplay="true" controls="true" style="max-width: 300px" src="/img/18e/change-player-order.mp4"></video></p>
+<h2 id="new-maps">New Maps</h2>
+<p>Three new 4-player maps have been added!</p>
+<div class="centered">
+<p><strong>Isolate</strong></p>
+</div>
+<p><img src="/img/18e/isolate.png" alt="Isolate map"></p>
+<div class="centered">
+<p><strong>Slices</strong></p>
+</div>
+<p><img src="/img/18e/slices.png" alt="Slices map"></p>
+<div class="centered">
+<p><strong>Two By Two</strong></p>
+</div>
+<p><img src="/img/18e/twobytwo.png" alt="Two By Two map"></p>
+<h2 id="balance-changes">Balance Changes</h2>
+<p>The three newest fighters, Lurker, Architect, and Omnibus, have had some balance changes, as well as some bugs fixed.</p>
+<h3 id="human-architect">Human Architect</h3>
+<ul>
+<li>Teleport Gun is now an ability, rather than a primary attack. It has a 1-turn cooldown.</li>
+<li>Teleport Gun can now only teleport people in straight lines, and will simply reduce the range if blocked.</li>
+</ul>
+<div class="centered">
+<p>Before:</p>
+</div>
+<div class="smallish-img">
+<p><img src="/img/18e/tp-gun-before.png" alt="teleport gun before changes"></p>
+</div>
+<div class="centered">
+<p>After:</p>
+</div>
+<div class="smallish-img">
+<p><img src="/img/18e/tp-gun-after.png" alt="teleport gun after changes"></p>
+</div>
+<p>This should reduce the amount of times that Teleport Gun can send someone to a unexpected position, and make it less frustrating to play against.</p>
+<ul>
+<li>Bugfix: when Teleport Gun is taunted (by Exterminator) and the projectile is reflected, Architect will now be teleported in the correct direction.</li>
+</ul>
+<h3 id="robot-omnibus">Robot Omnibus</h3>
+<p>Omnibus was a bit too strong using just his Machine Gun. This nerf is intended to force players to pick Omnibus when they actually want to get value out of his ability to place teleporters, not just for a high-movement, 3-damage character.</p>
+<ul>
+<li>
+<p>Movement has been decreased from 5 -&gt; 4</p>
+</li>
+<li>
+<p>Bugfix: If a fighter goes through an Omnibus teleporter and ends up on a different teleporter, they&rsquo;ll now teleport through that one as well. This enables stringing together multiple teleports, similar to what is possible with Teleport Gun.</p>
+</li>
+</ul>
+<h3 id="critter-lurker">Critter Lurker</h3>
+<p>Last patch&rsquo;s nerf to Lurker&rsquo;s Burrow ability was effective in removing the abuse cases it had. However, that change in combination with how easy burrows are to destroy made the ability rather boring, and only really usable in territory that you already control. That doesn&rsquo;t really match Lurker&rsquo;s combat fantasy of burrowing behind enemy lines for a sneak attack. So, that ability has been reworked.</p>
+<ul>
+<li>Lurker now gets 1 extra movement after burrowing. This enables Lurker to move off of the burrow exit.</li>
+<li>Each burrow can be used by one fighter per turn - not counting when Lurker creates it.</li>
+<li>Burrow range decreased from 5 -&gt; 4</li>
+</ul>
+<p>Taken together, these changes will make Burrow more similar in usage to the Teleport Gun. Lurker can make a burrow to a strategic position behind enemy lines, and then one other friendly fighter can follow through the burrow to attack or use an ability. The Lurker is still fairly vulnerable in this position, but because the burrow is still usable the next turn, either Lurker or the other fighter that followed will have an escape route.</p>
+<ul>
+<li>Bugfix: Burrow is now no longer usable when standing on top of a teleporter</li>
+</ul>
+<h3 id="human-ranger">Human Ranger</h3>
+<p>Smoke Screen was a bit too effective at removing large hazardous areas, such as acid or fire.</p>
+<ul>
+<li>Smoke Screen: will now spread smoke in a &ldquo;plus&rdquo; pattern, rather than a full 3x3 square.</li>
+</ul>
+<h2 id="other-bugfixes">Other Bugfixes</h2>
+<ul>
+<li>Fixed: Bases always appear the same, rather than showing as a variant depending on the player&rsquo;s chosen team.</li>
+<li>Fixed: Top bar hijacking focus for scrolling in clear areas.</li>
+<li>Fixed: &ldquo;Upload Logs&rdquo; thing now has an actual text box where you can send a message along with the logs.</li>
+<li>Fixed: When shooting a low-health enemy, Shotgun bullets will now penetrate through them. This makes it more consistent with Machine Gun.</li>
+</ul>
+<hr>
+<p>As always, feedback is most welcome! Please leave comments below or discuss <a href="https://discord.gg/xauqK3s5sd">on Discord</a>.</p>
+
+
+			<div class="post-tags">
+				
+				
+				
+			</div>
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/18c/?ref=footer">« Previous Post: 18c Patch Notes - Balance Changes &amp; Bugfixes</a>
+					</div>
+					
+			
+					
+				</div>
+				<hr />
+			
+		</div>
+
+	</article>
+</main>
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="japhib/bstar.app"
+        data-repo-id="R_kgDOH2SgyQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOH2Sgyc4CUvih"
+        data-mapping="og:title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <p class="text-center" style="color: rgb(193, 193, 193);">© 2022 Pollywog Games</p>
+    </footer>
+</div>
+
+<script>
+    function updateText() {
+        let delay = 200;
+        let wavyAll = document.querySelectorAll(".wavy");
+
+        for (const wavy of wavyAll) {
+            wavy.innerHTML = wavy.textContent
+                .split("")
+                .map(letter => {
+                    console.log(letter);
+                    return `<span>` + letter + `</span>`;
+                })
+                .join("");
+
+            Array.from(wavy.children).forEach((span, index) => {
+                setTimeout(() => {
+                    span.classList.add("wavy-animated");
+                }, index * 60 + delay);
+            });
+        }
+    }
+
+    updateText();
+</script></div>
+    </body>
+</html>
