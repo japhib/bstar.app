@@ -107,8 +107,9 @@
 <h3 id="regeneration---human-commando-and-critter-grump">Regeneration - Human Commando and Critter Grump</h3>
 <p>This ability is a centerpiece of Commando&rsquo;s and Grump&rsquo;s identities as damage-soaking frontline units. With <strong>Regeneration</strong> as a passive ability, these units heal at the beginning of every single turn, regardless of whether or not they used a full action on the previous turn. This patch, it became obvious that it&rsquo;s a little too easy for these units to be useful soaking up damage, and still be really hard to kill. So we&rsquo;re changing the ability to be an active ability, rather than a passive one. Additionally, since it now has a cooldown, we&rsquo;re giving it an additional point of healing when activated. This will force players to be a bit more strategic about when to activate the ability.</p>
 <ul>
-<li><code>Passive -&gt; Active</code> (only targets self)</li>
+<li><code>Passive -&gt; Active</code> (now a self-targeted ability)</li>
 <li><code>Cooldown: 0 -&gt; 1</code></li>
+<li><code>Healing: 2 -&gt; 3</code></li>
 </ul>
 <h3 id="human-amphibian">Human Amphibian</h3>
 <p>Amphibian has struggled a little to find an identity within the meta, and this patch she&rsquo;s getting a bit of a rework to strengthen her identity as a frontliner.</p>
@@ -155,7 +156,6 @@ Targets self only.
 </ul>
 <p><strong><code>Stasis</code></strong></p>
 <ul>
-<li><code>Range: 3 -&gt; 4</code></li>
 <li><code>Changed: no longer gives shield. Instead, deals 2 damage. Also deals 2 damage to adjacent enemies, in a line perpendicular to cast direction.</code></li>
 </ul>
 <p>If that last bit is confusing, here&rsquo;s a visual:</p>
@@ -177,7 +177,9 @@ Targets self only.
 <p>After quite a bit of discussion with players, we decided that the fundamental problem that gave this ability an unfair advantage was that once placed, teleporters cannot be destroyed, and they stay in the same spot for the rest of the game. The most common strategy is to just place one end of the teleporter in your spawn, and the other end next to the nearest other teleporter on the map, and then boom, for the rest of the game you have instant access to that teleporter when you respawn. Hopefully this change will encourage more strategic thinking about where to place teleporters.</p>
 <h3 id="critter-bounty-hunter">Critter Bounty Hunter</h3>
 <p>Bounty Hunter is another unit without a secondary ability. We&rsquo;re giving him a new ability that may be a bit niche, but seemed to fit well with his kit.</p>
-<p><strong><code>Smoke Shroud</code></strong></p>
+<ul>
+<li><code>New ability:</code> <strong><code>Smoke Shroud</code></strong></li>
+</ul>
 <pre tabindex="0"><code>Cooldown: 1
 Range: 0
 Bounty Hunter uses a miniature smoke grenade to create a smoke screen on just their square.
