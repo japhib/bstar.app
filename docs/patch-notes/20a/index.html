@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+
+    
+    <script defer data-domain="bstar.app" src="https://plausible.io/js/script.js"></script>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+
+    
+    
+    <link rel="stylesheet" href="https://bstar.app/style.css" />
+
+    <meta property="og:title" content="20a Patch Notes - Season 4 and Map Editor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+
+    <title>Barnard&#39;s Star - 20a Patch Notes - Season 4 and Map Editor</title>
+</head><body>
+        <div class="container content text-light"><div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+            <span class="fs-4">Barnard&#39;s Star</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://discord.gg/h5C5wEx" class="nav-link">Discord</a></li>
+            <li class="nav-item"><a href="/patch-notes" class="nav-link">Patch Notes</a></li>
+        </ul>
+    </header>
+</div>
+<main>
+	<article>
+		<div class="wide-container padded tertiary-bg p-text-mid">
+
+			<div class="title">
+				<h1 class="text-center post-title">20a Patch Notes - Season 4 and Map Editor</h1>
+
+				
+
+				
+				<p class="blog-meta">Jan Bergeson (jamp)</p>
+				
+
+				
+				<p class="blog-meta">May 27, 2024</p>
+				
+			</div>
+			
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/19a/?ref=footer">« Previous Post: 19a Patch Notes - Tons of balance changes &amp; fixes</a>
+					</div>
+					
+			
+					
+				</div>
+			
+
+			<hr />
+
+			<div class="table-of-contents">
+				<h3>Contents</h3>
+				<div id="contents">
+					<nav id="TableOfContents">
+  <ul>
+    <li><a href="#map-editor">Map Editor</a>
+      <ul>
+        <li><a href="#making-a-new-map">Making a New Map</a></li>
+        <li><a href="#editing-a-draft-map">Editing a Draft Map</a></li>
+        <li><a href="#uploading-a-draft-map">Uploading a Draft Map</a></li>
+        <li><a href="#voting-on-maps">Voting on Maps</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-players">6 Players</a></li>
+    <li><a href="#automechanic-rework---chembot">Automechanic rework -&gt; Chembot</a>
+      <ul>
+        <li><a href="#changes">Changes</a></li>
+      </ul>
+    </li>
+    <li><a href="#balance-changes">Balance Changes</a>
+      <ul>
+        <li><a href="#oilslow-updates">Oil/Slow updates</a></li>
+        <li><a href="#unit-changes">Unit Changes</a></li>
+      </ul>
+    </li>
+    <li><a href="#skill-rating-formula-changes">Skill Rating Formula Changes</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+  </ul>
+</nav>
+				</div>
+			</div>
+
+			<p>I&rsquo;d say something about this update having taken a long time &hellip; but I&rsquo;ve said that every time. I guess it&rsquo;s normal at this point.</p>
+<p>This is a huge update, introducing a <strong>Map Editor</strong>! For the first time, you&rsquo;ll be able to play on maps made by other players (and yourself!), rather than just me! Up to now, there&rsquo;s only been 18 maps, all of which were made by me or <code>@chalcidfly</code>. I&rsquo;m hoping that this update will result in a veritable <a href="https://en.wikipedia.org/wiki/Cambrian_explosion">Cambrian explosion</a> of maps, and that over the next few months there will be dozens, if not hundreds, of fun new maps for everyone to play on.</p>
+<p>Also, now that it&rsquo;s easy to make new maps for any number of players, I&rsquo;ve gone ahead and enabled playing with 6 players!</p>
+<p>And that&rsquo;s not all &ndash; this update also ushers in the beginning of Season 4, with lots of accompanying balance changes. Automechanic has even been reworked, and received a new name (Chembot).</p>
+<h2 id="map-editor">Map Editor</h2>
+<p>As mentioned above, every single map in Barnard&rsquo;s Star thus far has been made by me or <code>@chalcidfly</code>. And we (mainly I) have been pretty busy coding and adding new stuff to the game, so there&rsquo;s only been 18 maps that we&rsquo;ve slow-dripped into the game.</p>
+<p>But no longer! As of this update, <strong>any</strong> player can create and upload their own maps. As many as they want. And then those maps are instantly available to have new games played on them. Let&rsquo;s take a tour!</p>
+<blockquote>
+<p>Note: the map editor is still a little rough around the edges! I&rsquo;m relying on players like you to tell me what&rsquo;s working and what&rsquo;s not. With your feedback, we can continually improve upon the map editor and make it a better experience.</p>
+</blockquote>
+<h3 id="making-a-new-map">Making a New Map</h3>
+<p>Here&rsquo;s how to start editing a new map from the main menu:</p>
+<ol>
+<li>On the bottom right, click the new hamburger menu and then &ldquo;Map Editor&rdquo; in the popup. The Map Editor menu will then show up.</li>
+<li>From the Map Editor menu, click the big &ldquo;New Map&rdquo; button at the top.</li>
+<li>In the New Map dialog that pops up, choose the number of players you want the map to be for, and then click the blue button &ldquo;Choose Template&rdquo; to choose the template your new map will be based on.</li>
+<li>In the &ldquo;Choose Map&rdquo; screen that pops up when you click &ldquo;Choose Template,&rdquo; there is a &ldquo;Filter &amp; Sort&rdquo; button you can use to find the map you&rsquo;d like to use.</li>
+<li>After choosing a template, optionally change the options for &ldquo;Map Name,&rdquo; &ldquo;Wall &amp; Floor Color&rdquo;, and &ldquo;Background Image&rdquo;.</li>
+<li>Click &ldquo;Create&rdquo; to create the new map and start editing it.</li>
+</ol>
+<p><video autoplay="true" controls="true" style="max-width: 900px" src="/video/20a/new-map.mp4"></video></p>
+<h3 id="editing-a-draft-map">Editing a Draft Map</h3>
+<p>There are lots of tools available to help you customize your map exactly as you want it.</p>
+<ul>
+<li>The default tool selected is the &ldquo;Pointer&rdquo; tool. Use this to drag the map view around. You can also pinch in or out to zoom, just like in-game.</li>
+<li>There are several &ldquo;brushes&rdquo; that can be used for painting features on the map:
+<ul>
+<li>Floor - draws an empty floor tile</li>
+<li>Cover - draws a cover tile (also shows a popup to select which type of cover to place)</li>
+<li>Wall - draws an indestructible wall</li>
+<li>Eraser - erases any map features (cover/wall/anything else), or the floor if there&rsquo;s nothing on top of it.</li>
+<li>Teleporter - place a teleporter on the map</li>
+<li>Base - place a base on the map. If there is already a base for the selected player on the map, the old base will be erased when placing a new one.</li>
+<li>Spawn - place a spawn point on the map. This usually goes right next to that player&rsquo;s base.</li>
+</ul>
+</li>
+<li>There are also undo &amp; redo buttons on the lower left.</li>
+<li>Next to undo/redo, there is a Symmetry button - use this to draw on 2 sides of your map simultaneously!
+<ul>
+<li>Note: The symmetry setting doesn&rsquo;t work when placing bases or spawn points.</li>
+</ul>
+</li>
+<li>In the bottom right there is a &ldquo;Settings&rdquo; menu that can be used to change map settings or upload the map (as draft, or published).</li>
+</ul>
+<p><video autoplay="true" controls="true" style="max-width: 900px" src="/video/20a/map-editing.mp4"></video></p>
+<h3 id="uploading-a-draft-map">Uploading a Draft Map</h3>
+<p>In order to create a game on your map, you must upload it. If you upload it as a draft, you can continue to edit it, but only you can view it and create games on it. If you upload it <em>not</em> as a draft (&ldquo;publish&rdquo; it), everyone else can see it, BUT you can no longer edit it! If you want to make changes to a map after it&rsquo;s published, you&rsquo;ll just have to create a new map, using your already-published one as a template.</p>
+<p>I&rsquo;d recommend the following steps to make sure a new map is ready to be published:</p>
+<ol>
+<li>Upload the map as a draft.</li>
+<li>Play a <strong>local</strong> game vs. AI (or vs. yourself) on your map.</li>
+<li>Edit the map a bit based on your experience playing against AI/yourself, and repeat as needed.</li>
+<li>Play an <strong>online</strong> game against another person or people (find a friend on the Discord!)</li>
+<li>After the game, ask the other people who played on your map what they think of it. Edit based on their feedback, and playtest more as needed.</li>
+<li>Finally, publish the map!</li>
+</ol>
+<p>Currently, there&rsquo;s no requirement to actually play games on your map, whether it&rsquo;s locally or with another human. So you just have to be careful to remember to do those things before you upload the map. But that may change in the future.</p>
+<blockquote>
+<p>Note: the decision to make maps non-editable after publishing is also up for discussion. Let me know if you think that&rsquo;s dumb.</p>
+</blockquote>
+<p>Here&rsquo;s how to upload the map as a draft:</p>
+<p><video autoplay="true" controls="true" style="max-width: 900px" src="/video/20a/save-map.mp4"></video></p>
+<p>And here&rsquo;s how to create a game on your draft map:</p>
+<p><video autoplay="true" controls="true" style="max-width: 900px" src="/video/20a/game-on-draft-map.mp4"></video></p>
+<h3 id="voting-on-maps">Voting on Maps</h3>
+<p>After you&rsquo;ve published your map (i.e. not as a draft), at the end of any game played on your map, a popup will appear that looks like this:</p>
+<div class="smallish-img">
+<p><img src="/img/20a/voting.png" alt="map voting popup"></p>
+</div>
+<p>Players will be able to use the thumbs-up and thumbs-down buttons to cast votes. Then when browsing maps (when choosing a map for a new game, or choosing a template for a new map), they&rsquo;ll be able to see the votes on the map. This is intended to provide players a way to give feedback on maps and choose from the highest-quality maps.</p>
+<p>That&rsquo;s pretty much it! Again, this is just the first iteration of the Map Editor and all related systems, and it&rsquo;s a lot of changes all at once. There are a lot of things that could be added or changed, and I need lots of players to tell me what is working and what is not. Please leave your feedback in Discord, or email me at <code>jan [at] pollywog.games</code>.</p>
+<h2 id="6-players">6 Players</h2>
+<p>You can now play games with 5 or 6 players! The new team colors (for a free-for-all) are yellow and brown:</p>
+<div class="smallish-img">
+<p><img src="/img/20a/yellow.png" alt="yellow team">
+<img src="/img/20a/brown.png" alt="brown team"></p>
+</div>
+<p>There are also 2 new team modes: <code>3v3</code> and <code>2v2v2</code>. They work just like the other team modes, but with more players.</p>
+<blockquote>
+<p>Note: due to laziness on my part (or &ldquo;getting this already massive update out the door quicker&rdquo;), when you play <code>2v2v2</code>, the 3rd team will technically have 2 different team colors - green and yellow. They appear different but they&rsquo;re actually on the same team. This will be corrected eventually.</p>
+</blockquote>
+<p>There&rsquo;s only 1 new built-in map for 6 players, at least so far. Now that the map editor has been created, though, I (and anyone else who wants to!) will be able to make more 5 and 6 player maps throughout the season.</p>
+<p>Here&rsquo;s the 6-player map, <code>Hexagon</code>:</p>
+<p><img src="/img/20a/hexagon.png" alt="hexagon map"></p>
+<h2 id="automechanic-rework---chembot">Automechanic rework -&gt; Chembot</h2>
+<p>Automechanic is one of the characters that sees the least play of all the units in the game. His kit was also a bit conflicting to use &ndash; the &ldquo;heal when standing in oil&rdquo; encouraged players to spread oil around your own territory, but that quickly becomes a liability when an enemy shoots it to ignite it into fire. His kit has been reworked to make it easier to use. It&rsquo;s probably also more powerful - so I&rsquo;ll be on the lookout as to whether it should be nerfed.</p>
+<h3 id="changes">Changes</h3>
+<ul>
+<li>Name: <del><code>Automechanic</code></del> -&gt; <code>Chembot</code> (more chemicals! less healing!)</li>
+<li>Movement: <code>5 -&gt; 4</code>
+<ul>
+<li>He has a base attack damage of 3, his abilities are generally more powerful &amp; damaging, <em>and</em> he&rsquo;s getting more mobility with Oil Dash. This is sort of a pre-emptive nerf to make sure he&rsquo;s not too insanely powerful by himself.</li>
+</ul>
+</li>
+<li>Immunities: <code>Immune to getting slowed by Oil.</code></li>
+<li>Weapon: unchanged (Plasma Sword: 3-damage melee, destroys cover in 1 hit and lights oil on fire)</li>
+</ul>
+<h4 id="ability-1-oil-dash">Ability 1: <code>Oil Dash</code></h4>
+<p><img style="width: 80px" src="/img/20a/oildash.png" class="pixel-img"></img></p>
+<pre tabindex="0"><code>Cooldown: 1
+Range: 5
+Chembot dashes forwards, leaving a trail of oil and gaining a temporary shield.
+Also splashes oil to all squares adjacent to ending spot.
+Targets empty spaces.
+</code></pre><p><strong>NOTE:</strong> if you get hit by Oil, it now <code>slows</code> you! See below for more details.</p>
+<p><video autoplay="true" controls="true" style="max-width: 500px" src="/video/20a/oildash.mp4"></video></p>
+<h4 id="ability-2-incendiary-grenade">Ability 2: <code>Incendiary Grenade</code></h4>
+<p><img style="width: 80px" src="/img/20a/firegrenade.png" class="pixel-img"></img></p>
+<pre tabindex="0"><code>Cooldown: 1
+Range: 3
+Chembot throws an incendiary grenade to the target square, creating fire
+on the target square and adjacent squares.
+Targets any space without cover or a pit. Diagonal directions only.
+</code></pre><p><video autoplay="true" controls="true" style="max-width: 500px" src="/video/20a/firegrenade.mp4"></video></p>
+<h2 id="balance-changes">Balance Changes</h2>
+<h3 id="oilslow-updates">Oil/Slow updates</h3>
+<p>Currently, Oil is kind of the worst &ldquo;hazard&rdquo; (compared to Water, Acid, Fire, etc). It doesn&rsquo;t deal damage by itself, unlike Fire and Acid. It <em>can</em> be ignited into Fire, but that takes another fighter using their action to shoot it. It&rsquo;s threatening on the board because it can be ignited, but only once &ndash; unlike Water, which can be Electrified over and over.</p>
+<p>To that end, Oil is receiving a bit of a buff: <code>units hit by Oil, or stepping into Oil, will now be Slowed.</code></p>
+<p>In order to not make it <em>too</em> OP, though, Slow is also getting a bit of a nerf. Rather than cutting the effected unit&rsquo;s movement points in half (effectively -2 movement, given that all units have a base movement of 4 or 5), it&rsquo;ll just give -1 movement.</p>
+<p><video autoplay="true" controls="true" style="max-width: 500px" src="/video/20a/oil-slow.mp4"></video></p>
+<h3 id="unit-changes">Unit Changes</h3>
+<p><strong>Human Rocketeer</strong></p>
+<ul>
+<li>Rocketeer is one of the few units left that only has one ability. He&rsquo;s also one of the worst cases of not having anything fun to do when Bazooka is on cooldown. He&rsquo;s getting a new ability:</li>
+</ul>
+<pre tabindex="0"><code>Personal Barrier:
+Cooldown: 1
+Range: 0
+Rocketeer deploys a single square of cover on a square adjacent to himself.
+Targets empty, adjacent spaces.
+</code></pre><p><strong>Robot Minion</strong></p>
+<ul>
+<li>New ability!</li>
+</ul>
+<pre tabindex="0"><code>Oil Rain:
+Cooldown: 1
+Range: 2
+Rains oil down on adjacent squares.
+Targets self only.
+</code></pre><p><strong>Critter Grump</strong></p>
+<ul>
+<li>Regeneration: This ability was changed for both Grump and Commando last update. It went from a passive healing of 2 health at the beginning of turn, to an active healing of 3 health that took an action. However, this made Grump feel a lot less tanky, since instead of healing <em>every single turn</em>, he&rsquo;s only healing every once in a while, when you can spare an action. This change has been reverted for Grump.
+<ul>
+<li><code>Active</code> -&gt; <code>Passive</code></li>
+<li>Healing: <code>3</code> -&gt; <code>2</code></li>
+</ul>
+</li>
+<li>Commando still has the active version of this ability, which has been renamed to <code>Combat Drugs</code>.</li>
+</ul>
+<p><strong>Critter Gunslinger</strong></p>
+<ul>
+<li>Gunslinger is one of the other units left that only has 1 ability. He&rsquo;s getting another minor secondary ability:</li>
+</ul>
+<pre tabindex="0"><code>Haste:
+Cooldown: 1
+Range: 0
+Gunslinger uses action to get +2 temporary movement points.
+These extra movement points do not come back upon getting a kill.
+Targets self only.
+</code></pre><p><strong>Critter Fly</strong></p>
+<ul>
+<li>New ability!</li>
+</ul>
+<pre tabindex="0"><code>Acid Drizzle:
+Cooldown: 1
+Range: 2
+Rains acid down on adjacent squares.
+Targets self only.
+</code></pre><h2 id="skill-rating-formula-changes">Skill Rating Formula Changes</h2>
+<p>The formula for skill rating has also changed! Previously, you&rsquo;d only get points for winning a ranked game. You&rsquo;d lose points only for losing a ranked game, but it was tempered between the range of 1400-1600, so you couldn&rsquo;t go under 1400 and when you&rsquo;re less than 1600, you&rsquo;d lose less points.</p>
+<p>The feedback I got for this system was that it&rsquo;s too hard to gain any points at all. I think that&rsquo;s valid, and I want to reward players for playing lots of games in a season, not just for winning ranked games. So here&rsquo;s the new system:</p>
+<ol>
+<li>Everyone&rsquo;s elo will be reset to 1000 rather than 1500 this season.</li>
+<li>For any games (not just ranked games), you&rsquo;ll get points just for playing. The number of points equals <code>5 + &lt;number of turns in the game&gt;</code>, to reward people with more points for playing more turns. At an average of ~10-15 turns per game, you&rsquo;ll get about 15-20 points per game.
+<ul>
+<li>Points just for playing will start to slowly fall off once you reach 1200 points, and once you reach 1800 points, you&rsquo;ll no longer gain any more points just for playing.</li>
+</ul>
+</li>
+<li>For ranked games only, you&rsquo;ll also gain or lose points for playing. This will use the Elo system with the same numbers as before, so a win against an evenly-matched foe will give you 25 points.
+<ul>
+<li>You can&rsquo;t lose any points for ranked losses below a rating of 1600. Once you hit 1600 you&rsquo;ll start to lose a small amount of points for a loss, and by the time you reach 2000, you&rsquo;ll lose the full amount of points for a loss.</li>
+</ul>
+</li>
+</ol>
+<p>The intent of the new system is to A. reward players for playing any online games, up to a point, and B. not punish players for losing ranked games until you reach a much higher level.</p>
+<h2 id="roadmap">Roadmap</h2>
+<p>Implementing the map editor was a pretty huge project for this update. Over the next 4-6 months I hope to release multiple smaller updates with stuff like:</p>
+<ul>
+<li>Map editor improvements
+<ul>
+<li>Maybe a comment system? Or maybe Discord is good enough for discussing maps &amp; how to improve them</li>
+<li>Map types &ndash; team-only maps, etc. Right now any map can be used for team games or for a free-for-all, which limits the design space for creating maps.</li>
+<li>Player badge for creating a map, maybe another when a map you made reaches a certain number of plays by other people</li>
+<li>Quality of life stuff, like quickly creating a skirmish vs. AI game on your map while you&rsquo;re editing it</li>
+</ul>
+</li>
+<li>Miscellaneous fun stuff
+<ul>
+<li>More mutations</li>
+<li>Special map tiles that give a shield or spread a hazard</li>
+<li>Skip rather than kick a timed out player</li>
+<li>Better controls when watching a replay</li>
+<li>Rematch button at the end of a game</li>
+</ul>
+</li>
+</ul>
+<p>Longer term, the roadmap looks something like this:</p>
+<ul>
+<li>Scenarios and co-op
+<ul>
+<li>Play vs. AI in online games</li>
+<li>Special asymmetrical scenarios, where AI enemies have crazy powerful abilities &amp; players team up against them</li>
+<li>As part of this, there will be a bunch of new mutations</li>
+</ul>
+</li>
+<li>Roguelike mode</li>
+<li>Better tutorial/extended campaign, mainly for teaching new players how to play</li>
+<li>At some point, the game will be made free with IAP (never pay-to-win in any form though)</li>
+</ul>
+<p>As always, let me know your thoughts on Discord!</p>
+
+
+			<div class="post-tags">
+				
+				
+				
+			</div>
+
+			<hr />
+
+			<div class="discord-cta">
+				<a href="https://discord.gg/h5C5wEx">Discuss on Discord</a>
+			</div>
+
+			
+				<hr />
+				<div class="nav footer-links">
+					
+					<div class="footer-link previous-post">
+						<a href="https://bstar.app/patch-notes/19a/?ref=footer">« Previous Post: 19a Patch Notes - Tons of balance changes &amp; fixes</a>
+					</div>
+					
+			
+					
+				</div>
+				<hr />
+			
+		</div>
+
+	</article>
+</main>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <p class="text-center" style="color: rgb(193, 193, 193);">© 2022 Pollywog Games</p>
+    </footer>
+</div>
+
+<script>
+    function updateText() {
+        let delay = 200;
+        let wavyAll = document.querySelectorAll(".wavy");
+
+        for (const wavy of wavyAll) {
+            wavy.innerHTML = wavy.textContent
+                .split("")
+                .map(letter => {
+                    console.log(letter);
+                    return `<span>` + letter + `</span>`;
+                })
+                .join("");
+
+            Array.from(wavy.children).forEach((span, index) => {
+                setTimeout(() => {
+                    span.classList.add("wavy-animated");
+                }, index * 60 + delay);
+            });
+        }
+    }
+
+    updateText();
+</script></div>
+    </body>
+</html>

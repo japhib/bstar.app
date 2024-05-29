@@ -140,3 +140,10 @@ div > ul > li {
 
 .smallish-img img {
   max-width: 300px; }
+
+.pixel-img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  display: inline-block;
+  margin: auto; }
