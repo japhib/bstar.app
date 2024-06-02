@@ -89,10 +89,12 @@
     <li><a href="#balance-changes">Balance Changes</a>
       <ul>
         <li><a href="#oilslow-updates">Oil/Slow updates</a></li>
+        <li><a href="#pre-choose-units-changes">Pre-Choose Units Changes</a></li>
         <li><a href="#unit-changes">Unit Changes</a></li>
       </ul>
     </li>
     <li><a href="#skill-rating-formula-changes">Skill Rating Formula Changes</a></li>
+    <li><a href="#minor-fixes--improvements">Minor Fixes &amp; Improvements</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
   </ul>
 </nav>
@@ -219,6 +221,9 @@ Targets any space without cover or a pit. Diagonal directions only.
 <p>To that end, Oil is receiving a bit of a buff: <code>units hit by Oil, or stepping into Oil, will now be Slowed.</code></p>
 <p>In order to not make it <em>too</em> OP, though, Slow is also getting a bit of a nerf. Rather than cutting the effected unit&rsquo;s movement points in half (effectively -2 movement, given that all units have a base movement of 4 or 5), it&rsquo;ll just give -1 movement.</p>
 <p><video autoplay="true" controls="true" style="max-width: 500px" src="/video/20a/oil-slow.mp4"></video></p>
+<h3 id="pre-choose-units-changes">Pre-Choose Units Changes</h3>
+<p><a href="https://bstar.app/patch-notes/19a">The previous update</a> introduced a new mutation, <code>Pre-Choose Units</code>: All players must choose their units before the game can start. When this mutation was enabled, at the start of the game, all teams&rsquo; units would spawn immediately, so the 1st player to take their turn would be presented with everyone else&rsquo;s units just sitting in their spawn area. When the first player has mobility-enabling units (such as Lurker or Architect), it was possible to damage other player&rsquo;s units before they had taken a turn. This, of course, feels pretty bad.</p>
+<p>To remedy this issue, the way units spawn in games with Pre-Choose Units has been changed: <strong>Units for players other than the 1st will no longer spawn before the 1st player&rsquo;s turn.</strong> Before they&rsquo;ve spawned, though ,you can still view which units they chose, by tapping their base and examining the unit portraits at the top of the screen.</p>
 <h3 id="unit-changes">Unit Changes</h3>
 <p><strong>Human Rocketeer</strong></p>
 <ul>
@@ -229,7 +234,24 @@ Cooldown: 1
 Range: 0
 Rocketeer deploys a single square of cover on a square adjacent to himself.
 Targets empty, adjacent spaces.
-</code></pre><p><strong>Robot Minion</strong></p>
+</code></pre><p><strong>Robot Physics Engine</strong></p>
+<ul>
+<li>Last patch, Physics Engine got a new ability <code>Shockwave</code> that has turned out a bit underwhelming.
+<ul>
+<li>Changed: <code>Damages Cover</code> -&gt; <code>Destroys Cover</code></li>
+<li>New: <code>Deals 1 damage to enemies hit</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>Robot Omnibus</strong></p>
+<ul>
+<li>Last patch saw a 2-part nerf to Omnibus: placed teleporters became destructible, and when placing a 2nd one, the 1st one would disappear at the end of the turn. This ended up feeling a bit too heavy-handed, so the second part of that nerf has been undone:
+<ul>
+<li><code>When placing a 2nd teleporter, the 1st one will no longer disappear at the end of the turn.</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>Robot Minion</strong></p>
 <ul>
 <li>New ability!</li>
 </ul>
@@ -284,6 +306,25 @@ Targets self only.
 </li>
 </ol>
 <p>The intent of the new system is to A. reward players for playing any online games, up to a point, and B. not punish players for losing ranked games until you reach a much higher level.</p>
+<h2 id="minor-fixes--improvements">Minor Fixes &amp; Improvements</h2>
+<ul>
+<li>Pathing now correctly avoids ready attacks whenever possible</li>
+<li>When joining a lobby with Pre-Choose Units enabled, you are now immediately prompted to choose your units</li>
+<li>Bazooka explosions now correctly turn Acid Bubbles into Acid, not Smoke</li>
+<li>Shotgun is now slightly better at turning water into smoke at max range</li>
+<li>When shooting an enemy unit standing on an Omnibus-placed teleporter, the teleporter will no longer be destroyed</li>
+<li>Cones and Acid Bubbles can no longer be thrown over walls (can still be thrown over cover)</li>
+<li>Camera will no longer keep moving when the action is paused in Barnard&rsquo;s TV</li>
+<li>The &ldquo;100 Games Played&rdquo; badge will now be hidden when you achieve &ldquo;200 Games Played&rdquo;, and so on for 500</li>
+<li>Unit portraits at top of screen now properly scroll when there are more than 4</li>
+<li>Lurker’s Dash Strike can now target cover on the other side of an ally, if the cover will be destroyed</li>
+<li>When you tap a base, the owner of that base will now be displayed</li>
+<li>In-progress games can now be watched in Barnard&rsquo;s TV, if you filter by the game&rsquo;s ID</li>
+<li>Login on Android using Google OAuth has been fixed</li>
+<li>Unit unlock achievements involving winning/finishing multiplayer games have been fixed to work with kicks &amp; timeouts</li>
+<li>Mutations are shown much more prominently for both game lobbies and in-progress games</li>
+<li>An error preventing players from being removed from game lobbies has been fixed</li>
+</ul>
 <h2 id="roadmap">Roadmap</h2>
 <p>Implementing the map editor was a pretty huge project for this update. Over the next 4-6 months I hope to release multiple smaller updates with stuff like:</p>
 <ul>
@@ -305,7 +346,7 @@ Targets self only.
 </ul>
 </li>
 </ul>
-<p>Longer term, the roadmap looks something like this:</p>
+<p>Longer term, the following larger milestones are planned (in no particular order):</p>
 <ul>
 <li>Scenarios and co-op
 <ul>
