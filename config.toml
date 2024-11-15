@@ -1,6 +1,7 @@
 baseURL = 'https://bstar.app/'
 languageCode = 'en-us'
 title = "Barnard's Star"
+summaryLength = 7
 
 [markup]
   [markup.goldmark]
