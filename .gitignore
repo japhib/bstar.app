@@ -1,3 +1,8 @@
 .DS_Store
 resources/_gen/
 .hugo_build.lock
+
+# Sometimes the site gets built to the default `public` dir, but we have it
+# configured to serve from `docs`.
+# Build with `hugo -d docs`
+public/
