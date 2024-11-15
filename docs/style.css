@@ -137,6 +137,8 @@ div > ul > li {
   .posts .post .post-list-title {
     font-weight: 550;
     font-size: 1.2em; }
+  .posts .post .description {
+    color: #92a4c7; }
 
 .smallish-img img {
   max-width: 300px; }
