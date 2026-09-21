@@ -14,13 +14,13 @@
     
     <link rel="stylesheet" href="https://bstar.app/style.css" />
 
-    <meta property="og:title" content="21a Patch Notes - The Campaign" />
+    <meta property="og:title" content="21a Patch Notes - Campaign" />
     <meta property="og:image" content="/favicon.png" />
-    <meta property="og:description" content="The single player campaign is finally here! 28 missions across three factions, plus a new Teams Mode setting for maps and a handful of balance changes." />
+    <meta property="og:description" content="The single player campaign is finally here! 28 missions across all three factions, plus a new Teams Mode setting for maps and a handful of balance changes." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset='utf-8'>
 
-    <title>Barnard&#39;s Star - 21a Patch Notes - The Campaign</title>
+    <title>Barnard&#39;s Star - 21a Patch Notes - Campaign</title>
 </head><body>
         <div class="container content text-light"><div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
@@ -40,7 +40,7 @@
 		<div class="wide-container padded tertiary-bg p-text-mid">
 
 			<div class="title">
-				<h1 class="text-center post-title">21a Patch Notes - The Campaign</h1>
+				<h1 class="text-center post-title">21a Patch Notes - Campaign</h1>
 
 				
 
@@ -93,44 +93,39 @@
 				</div>
 			</div>
 
-			<p>The single player campaign is finally here! 28 missions across three factions, plus a new Teams Mode setting for maps and a handful of balance changes.</p>
-<p>Back in the 20f notes I said the next project was expanding the tutorial into something &ldquo;more like a prelude, or a cross between a story primer &amp; tutorial.&rdquo; That project grew into a full campaign! (It&rsquo;s also the reason this update took as long as it did.)</p>
+			<p>The single player campaign is finally here! 28 missions across all three factions, plus a new Teams Mode setting for maps and a handful of balance changes.</p>
+<p>Back in the 20f notes I said the next project was expanding the tutorial into something more like a prelude. The project ended up growing into a full campaign! (It&rsquo;s also the reason this update took as long as it did.)</p>
 <h2 id="campaign">Campaign</h2>
-<p>There are <strong>28 missions</strong> in total, split across three separate storylines:</p>
-<ul>
-<li><strong>Humans</strong> &ndash; 12 missions</li>
-<li><strong>Robots</strong> &ndash; 8 missions</li>
-<li><strong>Critters</strong> &ndash; 8 missions</li>
-</ul>
-<p>To play, press <strong>New Game</strong>, then <strong>Campaign</strong>, then pick a faction. Progress saves automatically, so you can put it down mid-campaign and pick it back up whenever.</p>
-<p>Each campaign starts from the very beginning &ndash; moving a unit, taking cover &ndash; and introduces units and mechanics one at a time until you&rsquo;re playing something close to a full battle. The Human campaign is the longest and the most tutorial-ish, and you have to play the first few missions of it before the Robot and Critter campaigns are unlocked. The Robot and Critter campaigns assume you already know how to play and get to the interesting stuff faster.</p>
-<p>The later missions in each faction are meant to be a real fight, not a walkthrough. If you&rsquo;ve been playing for years and you breeze through all 28, let me know! The campaign is meant to be <em>somewhat</em> of a challenge, even for experienced players. (I may eventually add a &lsquo;Hard Mode&rsquo; to the campaign later on, for veteran players only.)</p>
+<p>There are <strong>28 missions</strong> in total, split more or less evenly across one storyline each for for the Humans, Robots, and Critters.</p>
+<p>To play, press <strong>New Game</strong>, then <strong>Campaign</strong>, then pick a faction. Progress is saved automatically, so you can exit in the middle of a mission and come back later.</p>
+<p>The Human campaign must be played first. It starts from the very beginning with the most basic of basics: moving units, attacking, abilities, etc. and builds from there. Once you&rsquo;ve beaten the first 6 missions of the Human campaign, you&rsquo;re done with boot camp so you can start the Robot and Critter campaigns.</p>
+<p>The later missions in each faction are meant to be a bit more challenging, even for more experienced players. That said, let me know if you feel like it&rsquo;s too easy or too hard. I may eventually add a &lsquo;Hard Mode&rsquo; to the campaign later on, intended for veteran players. For now, it&rsquo;ll probably be more on the easy side.</p>
 <blockquote>
-<p>Note: the campaign is very much a <strong>work in progress</strong>! It&rsquo;s a lot of new content all at once, and I&rsquo;m relying on players like you to tell me what&rsquo;s working and what&rsquo;s not.</p>
+<p>Note: the campaign is very much a <strong>work in progress</strong>! It&rsquo;s a lot of new content all at once, and I&rsquo;m relying on players like you to tell me what works and what doesn&rsquo;t.</p>
 <p>Specifically, I&rsquo;d love feedback on the difficulty, length, and story of each mission.</p>
 </blockquote>
 <p>As always, please bring up bug reports and feedback in <a href="https://discord.gg/h5C5wEx">Discord</a>! Your feedback helps improve the game for everyone else.</p>
 <h2 id="teams-mode-for-maps">Teams Mode for Maps</h2>
 <p>Maps now have a <strong>Teams Mode</strong> setting, sitting alongside the other map settings in the map editor.</p>
-<p>This exists because maps built for team play - the ones where allied bases sit side by side - made for pretty cramped free-for-all games. If you&rsquo;ve ever started an FFA on a 2v2 map and found yourself spawning right next to an enemy while someone else got a quiet corner, this is the fix.</p>
+<p>This exists because maps built for team play, where allied bases sit side by side, made for pretty cramped free-for-all games. If you&rsquo;ve ever started an FFA on a 2v2 map and found yourself spawning awkwardly close to your enemy&rsquo;s base, this should help fix that.</p>
+<p>When designing a map, please pay attention to this setting:</p>
 <ul>
 <li>Set it to <strong>Free-For-All</strong> (the default) if the bases are far enough apart for an FFA game.</li>
 <li>Set it to a specific teams mode (<code>2v2</code>, <code>2v1</code>, <code>3v3</code>, <code>2v2v2</code>) if the spawn layout only makes sense for that mode.</li>
 </ul>
-<p>Maps set to a teams mode <strong>will no longer show up for free-for-all games</strong>. It still works the other way around: FFA maps remain available for team games, since spread-out bases are fine either way.</p>
-<p>2 player maps are unaffected &ndash; those are always 1v1, so the setting is disabled for them.</p>
+<p>Maps set to a teams mode <strong>will no longer show up for free-for-all games</strong>. FFA maps can still be used for team games, since spread-out bases are fine either way. (2 player maps are unaffected, since they&rsquo;re always 1v1.)</p>
 <p>I&rsquo;ve gone through and updated the existing maps that were obviously built for teams. If you&rsquo;ve made team-oriented maps of your own, now&rsquo;s a good time to check what mode they&rsquo;re set to.</p>
 <h2 id="escalating-turn-timeouts">Escalating Turn Timeouts</h2>
-<p>Until now, the turn timeout was a flat <strong>24 hours</strong> for everybody, on every single turn. Which is fine right up until someone stops playing &ndash; and then their opponents pay a full day of waiting for each remaining turn of the game, over and over.</p>
-<p>The timeout now escalates per player, per game, based on how many times that player has been skipped:</p>
+<p>Until now, the turn timeout was a flat <strong>24 hours</strong> for everybody. That&rsquo;s been fine for the most part, but it can get pretty annoying in the cases where someone&rsquo;s turn needs to be skipped every single time.</p>
+<p>The timeout now escalates based on how many times that player has been skipped:</p>
 <ul>
-<li>Never skipped &ndash; <code>24 hours</code> (unchanged)</li>
-<li>Skipped once &ndash; <code>12 hours</code></li>
-<li>Skipped twice or more &ndash; <strong>immediately skippable</strong>, the moment their turn starts</li>
+<li>Never skipped: <code>24 hours</code> (unchanged)</li>
+<li>Skipped once: <code>12 hours</code></li>
+<li>Skipped twice or more: <code>immediate</code></li>
 </ul>
-<p>The timeout resets the instant that player submits a turn of their own. So if you time out once because you were asleep, just take your next turn normally and you&rsquo;ll be straight back to the full 24 hours. Life happens, and this system is not meant to punish the occasional timeout, just to help in cases where someone has completely left.</p>
+<p>The timeout resets the instant that player submits a turn of their own. So if you time out once, just take your next turn normally and you&rsquo;ll be straight back to the full 24 hours. Life happens, and this system is not meant to punish the occasional timeout, just to help in cases where someone has completely left.</p>
 <p>Once a player has reached that immediately-skippable stage, the skip dialog also offers a new <strong>&ldquo;Always skip this player&rdquo;</strong> checkbox. Tick it and that player is skipped for the rest of the game without anybody having to press the button each turn. Players in that state get an indicator in the game list and the game details screen, so it&rsquo;s obvious what&rsquo;s happening. They also stop receiving a &ldquo;you were skipped&rdquo; notification every turn.</p>
-<p>As before, all of this only applies to non-ranked games &ndash; timed out players in ranked online games can still be kicked.</p>
+<p>As before, all of this only applies to non-ranked games. Timed out players in ranked online games can still be kicked.</p>
 <h2 id="balance-changes">Balance Changes</h2>
 <h3 id="pistols-for-support-units">Pistols for support units</h3>
 <ul>
@@ -145,8 +140,7 @@
 </ul>
 </li>
 </ul>
-<p>Both of these units were stuck throwing punches, which meant that once they&rsquo;d used their ability, standing anywhere near the fight was the only way to contribute anything at all &ndash; and standing near the fight is exactly what a support unit shouldn&rsquo;t be doing. Now they&rsquo;ve each got a <code>Pistol</code>.</p>
-<p>They&rsquo;re still not meant to win fights on their own. But a support unit should have <em>something</em> to do on the turns when its ability is on cooldown, and now they do.</p>
+<p>Both of these units were stuck with melee attacks, which doesn&rsquo;t really fit the archetype of a support unit. Now they&rsquo;ve each got a <code>Pistol</code>. They&rsquo;re still not meant to win fights on their own. Standing further back from the action makes more sense for a supporting role. Also, both these units have been underpowered for quite a while, and this should help alleviate that a bit.</p>
 <h3 id="omnibus-place-teleporter-rework">Omnibus: Place Teleporter rework</h3>
 <ul>
 <li><strong>Omnibus</strong>
@@ -155,9 +149,9 @@
 </ul>
 </li>
 </ul>
-<p><code>Place Teleporter</code> had an awkward problem: it did absolutely nothing until the second teleporter was down. You&rsquo;d spend a turn placing the first one and just&hellip; hope nobody messed with it before you could place the other.</p>
-<p>Now the first teleporter is useful on its own. Anything stepping on it gets pulled to a square next to Omnibus. Place a second one and they link up into a normal two-way teleporter, exactly as before.</p>
-<p>Worth keeping in mind: this works for <em>enemies</em> too. A lone teleporter is now an invitation for the other team to land right on top of your Omnibus, so think about where you&rsquo;re leaving it.</p>
+<p><code>Place Teleporter</code> was a bit awkward to get a payoff from, since it did absolutely nothing until you had 2 teleporters placed. You&rsquo;d spend a turn placing the first one, and have to wait another 2 turns before placing the next. At that point, the first one may have been destroyed!</p>
+<p>Now the first teleporter is useful on its own: Anything stepping on it moves next to Omnibus. Place a second one and they link up into a normal two-way teleporter, exactly as before.</p>
+<p>A word of caution: this works for enemies too! A lone teleporter is now an invitation for the other team to land right on top of your Omnibus, so think about where you&rsquo;re leaving it.</p>
 <h3 id="gunslinger-haste">Gunslinger: Haste</h3>
 <ul>
 <li><strong>Gunslinger</strong>
@@ -166,9 +160,8 @@
 </ul>
 </li>
 </ul>
-<p>Haste has always been a bit of a non-ability. Two extra movement points, in exchange for your action or a Ready Attack, is a bit underwhelming.</p>
-<p>Making it a full refill of Gunslinger&rsquo;s movement should make it more useful: shoot, run all the way back out of range, and live to shoot again next turn. In addition to hit-and-run tactics, it could also be used for a quick reposition after respawning to get back into a faraway fight.</p>
-<p>(As before, these extra movement points do not come back upon getting a kill.)</p>
+<p>Haste has always been a bit under-utilized. Two extra movement points, in exchange for your action or a Ready Attack, is a bit underwhelming.</p>
+<p>Making it a full refill of Gunslinger&rsquo;s movement should make it more useful as a hit-and-run, since you can shoot, and then run allll the way back out of range, to live to shoot again next turn. In addition to hit-and-run tactics, it could also be used for a quick reposition after respawning to get back into a faraway fight.</p>
 <h3 id="firewall-throw-oil-barrel">Firewall: Throw Oil Barrel</h3>
 <ul>
 <li><strong>Firewall</strong>
@@ -180,22 +173,20 @@
 <p>This reverts the range nerf from 20a. Sometimes the more balanced thing is less fun <code>:)</code></p>
 <h2 id="help-text-improvements">Help Text Improvements</h2>
 <ul>
-<li>New: <strong>terrain help</strong> for cover, walls, and pits. Tap them to see a description, and tap again to dismiss. This is mainly intended to help new players get oriented on the map</li>
-<li>Fighter <strong>immunities</strong> are showing up in the help text again</li>
-<li><code>Teleport Gun</code> (Architect) now correctly mentions in its description that it deals <strong>2 damage</strong></li>
-<li>Flavor text has been written for the units that were missing it: <code>Private</code>, <code>Space Cadet</code>, <code>Minion</code>, <code>Task Manager</code>, <code>Virus</code>, <code>Housefly</code>, <code>Grunt</code>, and <code>Hooligan</code>. Check the Unit Almanac to read up on where your favorite cannon fodder comes from!</li>
+<li>New: <strong>terrain help</strong> for cover, walls, and pits. Tap them to see a description, and tap again to dismiss. This is mainly intended to help new players get oriented on the map.</li>
+<li>Fighter <strong>immunities</strong> are now showing up in the help text again.</li>
+<li><code>Teleport Gun</code> (Architect) now correctly mentions in its description that it deals <strong>2 damage</strong>.</li>
 </ul>
 <h2 id="other-changes--fixes">Other Changes &amp; Fixes</h2>
 <ul>
 <li>New profile stat: <strong>Total Turns Submitted</strong></li>
-<li>Fix for the cover damage preview sprite</li>
 <li>Fix for healthbar weirdness during replays</li>
 <li>Fix for various camera issues during animations</li>
 <li>Plenty of smaller fixes throughout</li>
 </ul>
 <p>Thanks to everyone who reported bugs! Player feedback is ALWAYS appreciated.</p>
 <h2 id="whats-next">What&rsquo;s Next</h2>
-<p>With the campaign out the door, the free-to-play work I talked about in the 20f notes is next up. The campaign was always the blocker there, since it&rsquo;s hard to invite a much larger audience in when the only intro is a handful of tutorial levels!</p>
+<p>With the campaign out the door, the free-to-play work I talked about in the 20f notes is next up. The campaign was always the blocker there, since it&rsquo;s hard to invite a much larger audience in when tutorial is so short and</p>
 <p>But before any of that, I want the campaign to actually be good. So play it, and tell me what you think! The more specific the feedback, the better.</p>
 <p>Please continue to tell us your thoughts about the game, either in <b>Discord</b>, <b>Reddit</b>, or using the <b>Report a Bug</b> form in the in-game options tab.</p>
 
